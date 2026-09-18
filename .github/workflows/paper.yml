@@ -1,7 +1,10 @@
 name: Бумажная торговля
 on:
   schedule:
-    - cron: "*/30 6-20 * * 1-5"   # каждые 30 мин, 09:00–23:59 МСК, пн–пт
+    # три сессии в будни: 09:50, 15:40, 21:30 МСК (каждая работает до ~5 ч 50 мин, последняя — до 23:55)
+    - cron: "50 6 * * 1-5"
+    - cron: "40 12 * * 1-5"
+    - cron: "30 18 * * 1-5"
   workflow_dispatch:
 permissions:
   contents: write
@@ -9,9 +12,12 @@ concurrency:
   group: paper
   cancel-in-progress: false
 jobs:
-  tick:
+  session:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 360
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -23,24 +29,25 @@ jobs:
           path: data
           key: moex-data-${{ github.run_id }}
           restore-keys: moex-data-
+      - name: Git-автор бота
+        run: |
+          git config --global user.name "paper-bot"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Опубликовать страницу (ветка site)
+        run: |
+          git worktree add --detach site
+          cd site && git checkout -q --orphan site-new && git rm -rfq .
+          cp ../dashboard/index.html . && touch .nojekyll
+          git add -A && git commit -qm "site $(date -u +%F)" && git push -q -f origin HEAD:refs/heads/site
       - name: Получить состояние портфелей (ветка live)
         run: |
           if git ls-remote --exit-code --heads origin live >/dev/null; then
-            git fetch --depth 1 origin live
+            git fetch -q --depth 1 origin live
             git worktree add live origin/live
+            cd live && git checkout -q -B live-local
           else
             git worktree add --detach live
-            (cd live && git checkout --orphan live-new && git rm -rfq .)
+            cd live && git checkout -q --orphan live-local && git rm -rfq .
           fi
-      - name: Тик бота
-        run: python -m tradebot.runner tick --state live
-      - name: Сохранить состояние и сайт
-        run: |
-          cp dashboard/index.html live/index.html
-          touch live/.nojekyll
-          cd live
-          git config user.name "paper-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -qm "tick $(TZ=Europe/Moscow date '+%Y-%m-%d %H:%M') МСК" || exit 0
-          git push -q origin HEAD:refs/heads/live
+      - name: Онлайн-сессия бота
+        run: python -m tradebot.runner session --state live --every 60 --publish-every 180 --publish "bash scripts/publish.sh live"

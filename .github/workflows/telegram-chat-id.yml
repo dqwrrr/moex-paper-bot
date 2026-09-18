@@ -1,0 +1,18 @@
+name: "Telegram: узнать chat id"
+on:
+  workflow_dispatch:
+jobs:
+  chat-id:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Показать chat id из последних сообщений боту
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then echo "Сначала добавьте секрет TELEGRAM_BOT_TOKEN"; exit 1; fi
+          curl -s "https://api.telegram.org/bot${TOKEN}/getUpdates" | python3 -c '
+          import json,sys
+          d=json.load(sys.stdin)
+          ids={(u.get("message") or {}).get("chat",{}).get("id") for u in d.get("result",[])}
+          ids.discard(None)
+          print("Ваш chat id:", *ids) if ids else print("Сообщений нет: напишите боту /start и запустите снова")'

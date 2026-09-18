@@ -93,3 +93,34 @@ def test_iss_candles_paging(monkeypatch):
     monkeypatch.setattr(iss, "_get", fake_get)
     df = iss.candles("TMOS", "2024-01-01")
     assert calls == [0, iss.CANDLE_PAGE] and df.index.is_monotonic_increasing and df["close"].iloc[-1] == 2
+
+
+def test_intraday_step_trades_comments_and_body_withdrawal(tmp_path, monkeypatch):
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+
+    import numpy as np
+
+    idx = pd.date_range("2026-09-18 10:00", "2026-09-18 12:00", freq="10min")
+    c = np.linspace(6.0, 6.6, len(idx))                     # ровный рост → стратегия «в рынке»
+    bars = pd.DataFrame({"open": c, "high": c, "low": c, "close": c, "value": 1.0, "volume": 1.0}, index=idx)
+    monkeypatch.setattr(iss, "candles", lambda *a, **k: bars)
+    prices = {"TMOS": 6.0, "TMON": 140.0}
+    monkeypatch.setattr(iss, "quotes", quotes_stub(prices))
+    cfg = {"risk": {"dd_limit": 0.2, "cooldown_days": 21, "withdraw_trigger": 0.15, "withdraw_share": 0.5,
+                    "withdraw_freq": "QE"},
+           "portfolio": [{"id": "a", "title": "Активный", "kind": "intraday", "strategy": "sma_cross",
+                          "params": {"fast": 2, "slow": 5}, "capital": 1000, "withdraw_min_profit": 0.02}]}
+    ctx = runner.Ctx()
+    now = datetime(2026, 9, 18, 12, 5, tzinfo=ZoneInfo("Europe/Moscow"))
+    site = runner.step(cfg, tmp_path, now, update_data=False, ctx=ctx)
+    p = site["portfolios"][0]
+    assert p["positions"][0]["ticker"] == "TMOS"
+    assert any(e["kind"] == "comment" for e in p["events"]) and any(e["kind"] == "trade" for e in p["events"])
+    # цена выросла на 10% → по правилу «тела» выводим всё сверх 1000 ₽
+    prices["TMOS"] = 6.6
+    text = runner.summarize(cfg, tmp_path, now, ctx)
+    assert "вывести прибыль" in text
+    st = json.loads((tmp_path / "a.json").read_text())
+    eq_after = st["cash_rub"] + sum(q * prices[t] for t, q in st["positions"].items())
+    assert 995 <= eq_after <= 1000.01 and st["withdrawals"][0]["amount"] > 90

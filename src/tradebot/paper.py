@@ -57,6 +57,13 @@ class Portfolio:
     events: list[dict] = field(default_factory=list)
     risk: dict = field(default_factory=dict)
     last_withdraw_period: str | None = None
+    kind: str = "daily"                   # daily — долгосрочный, intraday — активный
+    body: float = 0.0                     # «тело» для правила вывода прибыли (активный режим)
+    day: str | None = None                # текущий торговый день (для дневной статистики)
+    day_start_equity: float = 0.0
+    day_trades: int = 0
+    day_stopped: bool = False             # сработал дневной лимит убытка
+    last_comment: str | None = None
 
     # ---------- состояние ----------
     @classmethod

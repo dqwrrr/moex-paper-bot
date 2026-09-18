@@ -18,6 +18,7 @@ h1{font-size:22px;margin:0 0 4px}h2{font-size:18px;margin:0}h3{font-size:14px;ma
 th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}th{color:var(--mute);font-weight:600}
 .scroll{overflow-x:auto}.ev{font-size:13px;padding:6px 0;border-bottom:1px solid var(--line)}.ev time{color:var(--mute);margin-right:8px}
 .ev.withdraw{font-weight:600;color:var(--acc)}.ev.risk{color:var(--down)}.chart{height:260px;position:relative}.chart svg{width:100%;height:100%;display:block}.tip{position:absolute;pointer-events:none;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 8px;font-size:12px;display:none;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.12)}.legend{display:flex;gap:16px;font-size:12px;color:var(--mute);margin:4px 0}.legend i{display:inline-block;width:14px;height:0;border-top:2px solid;vertical-align:middle;margin-right:6px}.note{font-size:13px;color:var(--mute);margin-top:6px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.tab{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:8px 14px;font:inherit;cursor:pointer}.tab[aria-selected=true]{background:var(--acc);border-color:var(--acc);color:#fff}.tab small{opacity:.85;margin-left:6px}.tab[aria-selected=true] small{color:#fff}.rec{border-left:3px solid var(--acc);padding:8px 12px;background:rgba(47,91,211,.07);border-radius:6px;font-size:14px;margin-top:14px}.feed{max-height:420px;overflow-y:auto}.ev.comment{color:var(--mute)}.ev.summary{font-weight:600}.ev.trade{color:var(--ink)}
 .warn{background:rgba(179,38,30,.08);border:1px solid rgba(179,38,30,.3);border-radius:10px;padding:10px 12px;font-size:13px;margin-top:14px}
 </style>
 </head>
@@ -25,6 +26,7 @@ th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}th{col
 <h1>Бумажный торговый бот · Мосбиржа</h1>
 <div class="sub" id="meta">загрузка…</div>
 <div class="warn">Деньги виртуальные, котировки реальные (MOEX ISS, задержка ~15 мин). Прошлая доходность не гарантирует будущую. Не является инвестиционной рекомендацией.</div>
+<div class="tabs" id="tabs" role="tablist"></div>
 <div id="root"></div>
 </div>
 <script>
@@ -32,7 +34,7 @@ const fmt=(x,d=2)=>Number(x).toLocaleString('ru-RU',{minimumFractionDigits:d,max
 const pct=x=>(x>=0?'+':'')+fmt(x*100,2)+'%';
 const cls=x=>x>=0?'up':'down';
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-let DATA=null;
+let DATA=null, SEL=null; try{SEL=localStorage.getItem('sel')}catch(e){}
 
 async function livePrices(tickers){ // котировки прямо из браузера; если ISS недоступен — null
   const boards={TMOS:'TQTF',TMON:'TQTF'}; const out={};
@@ -49,29 +51,37 @@ async function livePrices(tickers){ // котировки прямо из бра
 
 function render(){
   const root=document.getElementById('root'); root.innerHTML='';
-  document.getElementById('meta').innerHTML=`Снимок бота: ${esc(DATA.updated)} МСК · данные индекса по ${esc(DATA.last_data_day)} · <span id="liveTag" class="pill">котировки из снимка</span>`;
-  DATA.portfolios.forEach(p=>{
-    const el=document.createElement('div'); el.className='card';
-    const pos=p.positions.map(x=>`<tr><td>${esc(x.ticker)}</td><td>${esc(x.name)}</td><td>${x.qty}</td><td data-px="${esc(x.ticker)}">${fmt(x.price,4)}</td><td>${fmt(x.value)}</td><td>${fmt(x.weight*100,1)}%</td></tr>`).join('')||'<tr><td colspan=6>Позиций нет</td></tr>';
-    const tr=p.trades.slice(0,15).map(t=>`<tr><td>${esc(t.time)}</td><td>${t.side==='BUY'?'Покупка':'Продажа'}</td><td>${esc(t.ticker)}</td><td>${t.qty}</td><td>${fmt(t.price,4)}</td><td>${fmt(t.cost)}</td><td>${esc(t.reason)}</td></tr>`).join('')||'<tr><td colspan=7>Сделок ещё не было</td></tr>';
-    const ev=p.events.slice(0,15).map(e=>`<div class="ev ${esc(e.kind)}"><time>${esc(e.t)}</time>${esc(e.text)}</div>`).join('')||'<div class="ev">Событий пока нет</div>';
-    const last=p.history[p.history.length-1]||{bench:p.start_capital};
-    el.innerHTML=`<h2>${esc(p.title)}</h2><div class="note">${esc(p.strategy)} · ${esc(p.note)}</div>
-    <div class="kpis">
-      <div class="kpi"><span>Капитал на счёте, ₽</span><b id="eq-${p.id}">${fmt(p.equity)}</b></div>
-      <div class="kpi"><span>Выведено (по правилу), ₽</span><b>${fmt(p.withdrawn)}</b></div>
-      <div class="kpi"><span>Итог к старту ${fmt(p.start_capital,0)} ₽</span><b id="pnl-${p.id}" class="${cls(p.pnl_pct)}">${pct(p.pnl_pct)}</b></div>
-      <div class="kpi"><span>Для сравнения: просто держать TMOS</span><b class="${cls(last.bench/p.start_capital-1)}">${pct(last.bench/p.start_capital-1)}</b></div>
-      <div class="kpi"><span>Свободные рубли</span><b>${fmt(p.cash_rub)}</b></div>
-    </div>
-    ${p.pending?`<div class="note">Ожидает исполнения при открытии рынка: ${esc(JSON.stringify(p.pending))}</div>`:''}
-    <h3>Капитал во времени</h3><div class="legend"><span><i style="border-color:var(--acc)"></i>Бот (капитал + выведенное)</span><span><i style="border-color:var(--bench);border-top-style:dashed"></i>Просто держать TMOS</span></div><div class="chart" id="c-${p.id}"></div>
-    <h3>Позиции</h3><div class="scroll"><table><tr><th>Тикер</th><th>Бумага</th><th>Штук</th><th>Цена</th><th>Стоимость, ₽</th><th>Доля</th></tr>${pos}</table></div>
-    <h3>События и рекомендации</h3>${ev}
-    <h3>Последние сделки</h3><div class="scroll"><table><tr><th>Время</th><th>Тип</th><th>Тикер</th><th>Штук</th><th>Цена</th><th>Издержки, ₽</th><th>Причина</th></tr>${tr}</table></div>`;
-    root.appendChild(el);
-    drawChart(document.getElementById('c-'+p.id), p.history);
-  });
+  const ago=Math.round((Date.now()-new Date(DATA.updated.replace(' ','T')+':00+03:00'))/60000);
+  document.getElementById('meta').innerHTML=`Обновлено ботом: ${esc(DATA.updated)} МСК (${ago<1?'только что':ago+' мин назад'}) · <span id="liveTag" class="pill">котировки из снимка</span>`;
+  const tabs=document.getElementById('tabs'); tabs.innerHTML='';
+  if(!DATA.portfolios.some(p=>p.id===SEL)) SEL=DATA.portfolios[0]?.id;
+  DATA.portfolios.forEach(p=>{const b=document.createElement('button'); b.className='tab'; b.role='tab';
+    b.setAttribute('aria-selected',p.id===SEL); b.innerHTML=`${esc(p.title.split(':')[0])}<small class="${cls(p.pnl_pct)}">${pct(p.pnl_pct)}</small>`;
+    b.onclick=()=>{SEL=p.id; try{localStorage.setItem('sel',SEL)}catch(e){} render(); refreshLive()}; tabs.appendChild(b)});
+  const p=DATA.portfolios.find(x=>x.id===SEL); if(!p) return;
+  const el=document.createElement('div'); el.className='card';
+  const pos=p.positions.map(x=>`<tr><td>${esc(x.ticker)}</td><td>${esc(x.name)}</td><td>${x.qty}</td><td data-px="${esc(x.ticker)}">${fmt(x.price,4)}</td><td>${fmt(x.value)}</td><td>${fmt(x.weight*100,1)}%</td></tr>`).join('')||'<tr><td colspan=6>Сейчас вне рынка — деньги в рублях</td></tr>';
+  const tr=p.trades.slice(0,20).map(t=>`<tr><td>${esc(t.time)}</td><td>${t.side==='BUY'?'Покупка':'Продажа'}</td><td>${esc(t.ticker)}</td><td>${t.qty}</td><td>${fmt(t.price,4)}</td><td>${fmt(t.cost)}</td><td>${esc(t.reason)}</td></tr>`).join('')||'<tr><td colspan=7>Сделок ещё не было</td></tr>';
+  const ev=p.events.slice(0,80).map(e=>`<div class="ev ${esc(e.kind)}"><time>${esc(e.t.slice(5))}</time>${esc(e.text)}</div>`).join('')||'<div class="ev">Событий пока нет</div>';
+  const recEv=p.events.find(e=>e.kind==='withdraw'||e.kind==='summary'||e.kind==='risk');
+  const last=p.history[p.history.length-1]||{bench:p.start_capital};
+  el.innerHTML=`<h2>${esc(p.title)}</h2><div class="note">${esc(p.strategy)} · ${esc(p.note)}</div>
+  ${recEv?`<div class="rec"><b>Последняя рекомендация (${esc(recEv.t.slice(5))}):</b> ${esc(recEv.text)}</div>`:''}
+  <div class="kpis">
+    <div class="kpi"><span>Капитал на счёте</span><b id="eq-${p.id}">${fmt(p.equity)} ₽</b></div>
+    ${p.day_pnl_pct!=null?`<div class="kpi"><span>За сегодня</span><b class="${cls(p.day_pnl_pct)}">${pct(p.day_pnl_pct)}</b></div>`:''}
+    <div class="kpi"><span>С начала (с учётом выведенного)</span><b id="pnl-${p.id}" class="${cls(p.pnl_pct)}">${pct(p.pnl_pct)}</b></div>
+    <div class="kpi"><span>Выведено прибыли</span><b>${fmt(p.withdrawn)} ₽</b></div>
+    ${p.kind==='intraday'?`<div class="kpi"><span>Тело / сделок сегодня</span><b>${fmt(p.body,0)} ₽ · ${p.day_trades}</b></div>`:''}
+    <div class="kpi"><span>Просто держать TMOS</span><b class="${cls(last.bench/p.start_capital-1)}">${pct(last.bench/p.start_capital-1)}</b></div>
+  </div>
+  ${p.pending?`<div class="note">Ожидает исполнения при открытии рынка: ${esc(JSON.stringify(p.pending))}</div>`:''}
+  <h3>Лента бота</h3><div class="feed">${ev}</div>
+  <h3>Капитал во времени</h3><div class="legend"><span><i style="border-color:var(--acc)"></i>Бот (капитал + выведенное)</span><span><i style="border-color:var(--bench);border-top-style:dashed"></i>Просто держать TMOS</span></div><div class="chart" id="c-${p.id}"></div>
+  <h3>Позиции</h3><div class="scroll"><table><tr><th>Тикер</th><th>Бумага</th><th>Штук</th><th>Цена</th><th>Стоимость, ₽</th><th>Доля</th></tr>${pos}</table></div>
+  <h3>Сделки</h3><div class="scroll"><table><tr><th>Время</th><th>Тип</th><th>Тикер</th><th>Штук</th><th>Цена</th><th>Издержки, ₽</th><th>Причина</th></tr>${tr}</table></div>`;
+  root.appendChild(el);
+  drawChart(document.getElementById('c-'+p.id), p.history);
 }
 
 function drawChart(box, h){
@@ -97,24 +107,34 @@ function drawChart(box, h){
 }
 
 async function refreshLive(){
-  const tickers=[...new Set(DATA.portfolios.flatMap(p=>p.positions.map(x=>x.ticker)))];
-  if(!tickers.length) return;
-  const px=await livePrices(tickers); const tag=document.getElementById('liveTag');
-  if(!px||!Object.keys(px).length){tag.textContent='живые котировки недоступны — показан снимок';return}
-  tag.textContent='прямой эфир: '+new Date().toLocaleTimeString('ru-RU'); tag.className='pill live';
-  DATA.portfolios.forEach(p=>{
-    let eq=p.cash_rub; p.positions.forEach(x=>{eq+=x.qty*(px[x.ticker]??x.price)});
-    document.getElementById('eq-'+p.id).textContent=fmt(eq);
-    const r=(eq+p.withdrawn)/p.start_capital-1, el=document.getElementById('pnl-'+p.id);
-    el.textContent=pct(r); el.className=cls(r);
-  });
+  const p=DATA&&DATA.portfolios.find(x=>x.id===SEL); if(!p||!p.positions.length) return;
+  const px=await livePrices(p.positions.map(x=>x.ticker)); const tag=document.getElementById('liveTag');
+  if(!px||!Object.keys(px).length){if(tag) tag.textContent='живые котировки недоступны — показан снимок';return}
+  if(tag){tag.textContent='цены с биржи: '+new Date().toLocaleTimeString('ru-RU'); tag.className='pill live'}
+  let eq=p.cash_rub; p.positions.forEach(x=>{eq+=x.qty*(px[x.ticker]??x.price)});
+  const e1=document.getElementById('eq-'+p.id), e2=document.getElementById('pnl-'+p.id);
+  if(e1) e1.textContent=fmt(eq)+' ₽';
+  if(e2){const r=(eq+p.withdrawn)/p.start_capital-1; e2.textContent=pct(r); e2.className=cls(r)}
   document.querySelectorAll('[data-px]').forEach(td=>{const v=px[td.dataset.px]; if(v) td.textContent=fmt(v,4)});
 }
 
+function sources(){ // свежие данные берём прямо из ветки live на GitHub
+  const h=location.hostname, owner=h.endsWith('.github.io')?h.split('.')[0]:null, repo=location.pathname.split('/').filter(Boolean)[0];
+  const list=[];
+  if(owner&&repo){
+    list.push({url:`https://api.github.com/repos/${owner}/${repo}/contents/site.json?ref=live&t=${Date.now()}`,headers:{Accept:'application/vnd.github.raw+json'}});
+    list.push({url:`https://raw.githubusercontent.com/${owner}/${repo}/live/site.json?t=${Date.now()}`});
+  }
+  list.push({url:'site.json?t='+Date.now()});
+  return list;
+}
 async function load(){
-  const r=await fetch('site.json?'+Date.now()); DATA=await r.json();
+  for(const s of sources()){
+    try{const r=await fetch(s.url,{headers:s.headers||{},cache:'no-store'}); if(!r.ok) continue; DATA=await r.json(); break}catch(e){}
+  }
+  if(!DATA){document.getElementById('meta').textContent='Данных пока нет: бот ещё не запускался.';return}
   render(); refreshLive();
 }
-load(); setInterval(refreshLive,60000); setInterval(load,5*60000);
+load(); setInterval(refreshLive,60000); setInterval(load,120000);
 </script>
 </body></html>

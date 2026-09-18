@@ -32,7 +32,18 @@
 
 ## МОЁ ДЕЙСТВИЕ №5 — включить сайт
 
-Settings → **Pages** → Source: *Deploy from a branch* → Branch: **live**, папка **/ (root)** → Save.
+Settings → **Pages** → Source: *Deploy from a branch* → Branch: **site**, папка **/ (root)** → Save.
+(Ветка `site` появляется после первого запуска «Бумажная торговля». В ветке `live` лежат данные — страница берёт их сама.)
 Через 1–2 минуты сайт будет по адресу `https://<ваш-логин>.github.io/moex-paper-bot/`.
 
 Дальше бот работает сам: каждые 30 минут в будни с 9:00 до 24:00 МСК.
+
+## МОЁ ДЕЙСТВИЕ №7 — Telegram-уведомления (по желанию)
+
+1. В Telegram откройте **@BotFather** → `/newbot` → имя, например «Мой бумажный бот» → username, оканчивающийся на `bot`.
+2. BotFather пришлёт токен вида `123456:ABC...`. **Не присылайте его в чат** — положите в GitHub:
+   Settings → **Secrets and variables** → **Actions** → **New repository secret** → Name: `TELEGRAM_BOT_TOKEN`, Secret: токен → Add secret.
+3. Откройте своего бота в Telegram и нажмите **Start** (или напишите `/start`).
+4. Actions → «**Telegram: узнать chat id**» → Run workflow → откройте запуск → шаг покажет `Ваш chat id: 123456789`.
+5. Ещё один секрет: Name `TELEGRAM_CHAT_ID`, Secret — это число.
+Готово: сводки и сделки начнут приходить со следующей сессии.
