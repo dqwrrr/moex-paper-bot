@@ -46,3 +46,30 @@ def update_shares(data_dir: Path = DATA_DIR, max_days: int | None = None) -> int
         out = pd.concat([cur, *frames], ignore_index=True).drop_duplicates(["date", "ticker"], keep="last")
         out.sort_values(["date", "ticker"]).to_parquet(path, index=False)
     return len(frames)
+
+
+INTRADAY = {  # что качаем для внутридневных исследований
+    "TMOS": {"market": "shares", "board": "TQTF", "start": "2020-08-01"},
+    "IMOEX": {"market": "index", "board": None, "start": "2015-01-01"},
+}
+
+
+def update_candles(secid: str, interval: int = 10, data_dir: Path = DATA_DIR) -> int:
+    """Докачивает внутридневные свечи в data/candles_<secid>_<interval>m.parquet."""
+    cfg = INTRADAY[secid]
+    path = data_dir / f"candles_{secid}_{interval}m.parquet"
+    cur = pd.read_parquet(path) if path.exists() else None
+    frm = cfg["start"] if cur is None or cur.empty else (cur.index.max() - pd.Timedelta(days=3)).strftime("%Y-%m-%d")
+    # качаем по годам, чтобы не держать огромные ответы
+    frames = []
+    for y0 in pd.date_range(frm, pd.Timestamp.today() + pd.Timedelta(days=1), freq="YS").union([pd.Timestamp(frm)]):
+        y1 = min(pd.Timestamp(year=y0.year, month=12, day=31), pd.Timestamp.today())
+        df = iss.candles(secid, y0.strftime("%Y-%m-%d"), y1.strftime("%Y-%m-%d"), interval,
+                         cfg["market"], cfg["board"])
+        log.info("%s %s: %d свечей", secid, y0.year, len(df))
+        frames.append(df)
+    new = pd.concat(frames)
+    out = new if cur is None else pd.concat([cur, new])
+    out = out[~out.index.duplicated(keep="last")].sort_index()
+    out.to_parquet(path)
+    return len(out)

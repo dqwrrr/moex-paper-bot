@@ -189,11 +189,19 @@ def site_block(p: Portfolio, prices: dict[str, float], pc: dict) -> dict:
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["tick", "update-data"])
+    ap.add_argument("cmd", choices=["tick", "update-data", "update-intraday"])
     ap.add_argument("--config", default=str(ROOT / "config" / "portfolios.toml"))
     ap.add_argument("--state", default=str(ROOT / "state"))
     a = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+    if a.cmd == "update-intraday":
+        for secid in livedata.INTRADAY:
+            n = livedata.update_candles(secid)
+            log.info("%s: всего свечей %d", secid, n)
+        snap = iss.spread_snapshot(["TMOS", "TMON"])
+        (DATA_DIR / "spread_snapshot.json").write_text(snap.to_json(orient="index", force_ascii=False), encoding="utf-8")
+        log.info("Спред сейчас:\n%s", snap.to_string())
+        return 0
     if a.cmd == "update-data":
         d = livedata.update_index()
         n = livedata.update_shares()

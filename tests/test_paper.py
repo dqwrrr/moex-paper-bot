@@ -78,3 +78,18 @@ def test_compact_history():
     h = [{"t": f"2024-01-{d:02d} {hh:02d}:00"} for d in range(1, 11) for hh in (10, 12, 18)]
     c = runner.compact(h, keep_intraday_days=2)
     assert len(c) == 8 + 6
+
+
+def test_iss_candles_paging(monkeypatch):
+    cols = ["open", "close", "high", "low", "value", "volume", "begin", "end"]
+    full = [[1, 1, 1, 1, 1, 1, f"2024-01-02 10:{i % 60:02d}:00", ""] for i in range(iss.CANDLE_PAGE)]
+    pages = [{"candles": {"columns": cols, "data": full}},
+             {"candles": {"columns": cols, "data": [[2, 2, 2, 2, 2, 2, "2024-01-03 10:00:00", ""]]}}]
+    calls = []
+
+    def fake_get(path, params=None, retries=3):
+        calls.append(params["start"])
+        return pages[len(calls) - 1]
+    monkeypatch.setattr(iss, "_get", fake_get)
+    df = iss.candles("TMOS", "2024-01-01")
+    assert calls == [0, iss.CANDLE_PAGE] and df.index.is_monotonic_increasing and df["close"].iloc[-1] == 2

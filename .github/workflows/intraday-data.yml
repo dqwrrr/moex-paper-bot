@@ -1,0 +1,31 @@
+name: Скачать внутридневную историю
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: intraday-data
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -e .
+      - name: 10-минутные свечи TMOS и IMOEX + спред
+        run: python -m tradebot.runner update-intraday
+      - name: Опубликовать в ветку data-intraday
+        run: |
+          mkdir -p /tmp/pub && cp data/candles_*.parquet data/spread_snapshot.json /tmp/pub/
+          git worktree add --detach pub
+          cd pub
+          git checkout -q --orphan data-intraday-new
+          git rm -rfq .
+          cp /tmp/pub/* .
+          git config user.name "paper-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "intraday data $(date -u +%F)"
+          git push -q --force origin HEAD:refs/heads/data-intraday

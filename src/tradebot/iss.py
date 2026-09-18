@@ -99,3 +99,40 @@ def quotes(tickers: list[str], board: str) -> pd.DataFrame:
     df["PRICE"] = df["LAST"].where(df["LAST"].notna() & (df["LAST"] > 0), df["PREVPRICE"])
     df["LIVE"] = df["LAST"].notna() & (df["LAST"] > 0) & (df.get("TRADINGSTATUS") == "T")
     return df
+
+
+CANDLE_PAGE = 500
+
+
+def candles(secid: str, date_from: str, date_till: str | None = None, interval: int = 10,
+            market: str = "shares", board: str | None = "TQTF") -> pd.DataFrame:
+    """Свечи (1, 10, 60, 24 = день). Для индекса: market="index", board=None."""
+    path = (f"engines/stock/markets/{market}/boards/{board}/securities/{secid}/candles.json" if board
+            else f"engines/stock/markets/{market}/securities/{secid}/candles.json")
+    params: dict[str, Any] = {"from": date_from, "interval": interval}
+    if date_till:
+        params["till"] = date_till
+    frames, start = [], 0
+    while True:
+        df = block_to_df(_get(path, {**params, "start": start}), "candles")
+        if df.empty:
+            break
+        frames.append(df)
+        if len(df) < CANDLE_PAGE:
+            break
+        start += len(df)
+    if not frames:
+        return pd.DataFrame(columns=["open", "high", "low", "close", "value", "volume"])
+    out = pd.concat(frames, ignore_index=True)
+    out["begin"] = pd.to_datetime(out["begin"])
+    out = out.drop_duplicates("begin").set_index("begin").sort_index()
+    return out[["open", "high", "low", "close", "value", "volume"]].astype(float)
+
+
+def spread_snapshot(tickers: list[str], board: str = "TQTF") -> pd.DataFrame:
+    """Текущие лучшие цены покупки/продажи и шаг цены — для оценки спреда."""
+    p = _get(f"engines/stock/markets/shares/boards/{board}/securities.json",
+             {"securities": ",".join(tickers), "iss.only": "securities,marketdata",
+              "securities.columns": "SECID,MINSTEP,LOTSIZE,PREVPRICE",
+              "marketdata.columns": "SECID,BID,OFFER,LAST,SPREAD,SYSTIME"})
+    return block_to_df(p, "securities").set_index("SECID").join(block_to_df(p, "marketdata").set_index("SECID"))
