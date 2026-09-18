@@ -92,3 +92,13 @@ def test_overlay_total_wealth_consistent():
     acc, taken, log = apply_overlay(r, RiskRules(None, 0, 0.15, 0.5), 100.0)
     assert len(log) > 0 and taken.iloc[-1] > 0
     assert acc.min() > 0
+
+
+def test_split_adjustment():
+    from tradebot.data import adjust_splits
+    d = pd.bdate_range("2024-01-01", periods=4)
+    c = pd.DataFrame({"GMKN": [15000, 15100, 151, 152], "POGR": [10, 10, 2.3, 2.2]}, index=d)
+    adj, ev = adjust_splits(c)
+    assert [e[0] for e in ev] == ["GMKN"]
+    assert adj["GMKN"].iloc[1] == pytest.approx(151)          # история пересчитана под новый масштаб
+    assert adj["POGR"].iloc[2] == 2.3 and adj["POGR"].iloc[0] == 10   # реальный обвал не маскируется

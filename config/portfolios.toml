@@ -31,10 +31,4 @@ strategy = "index_sma"
 params = { n = 150 }
 capital = 1000
 
-[[portfolio]]
-id = "momentum"
-title = "Учебный: моментум акций (top-5)"
-note = "Для капитала от ~300 000 ₽ (лоты акций). Выше доходность в прошлом, но и просадки до −35%."
-strategy = "stock_momentum"
-params = { lookback = 126, skip = 21, top = 5, universe = 30, trend_filter = 0 }
-capital = 300000
+# Моментум акций выключен: провалился на проверке 2021–2026 (−14% в год, просадка −65%). См. docs/research-report.md
