@@ -1,0 +1,39 @@
+name: Обновить историю котировок
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 17 * * 1-5"   # 20:30 МСК — после основной сессии
+permissions:
+  contents: write
+concurrency:
+  group: data
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -e ".[dev]"
+      - uses: actions/cache@v4
+        with:
+          path: data
+          key: moex-data-${{ github.run_id }}
+          restore-keys: moex-data-
+      - name: Докачать историю с Мосбиржи (ISS)
+        run: python -m tradebot.runner update-data
+      - name: Опубликовать данные в ветку data (только при ручном запуске)
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          mkdir -p /tmp/pub && cp data/*.parquet /tmp/pub/
+          git fetch --depth 1 origin data || true
+          if git rev-parse --verify -q origin/data >/dev/null; then git worktree add pub origin/data; \
+          else git worktree add --detach pub && (cd pub && git checkout --orphan data-new && git rm -rfq .); fi
+          cp /tmp/pub/*.parquet pub/
+          cd pub
+          git config user.name "paper-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "data $(date -u +%F)" || exit 0
+          git push -q origin HEAD:refs/heads/data
