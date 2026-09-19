@@ -1,0 +1,10 @@
+{
+ "updated": "2026-11-28 04:04",
+ "ok": false,
+ "errors": [
+  {
+   "portfolio": "*",
+   "error": "IssError: ISS недоступен: history/engines/stock/markets/index/securities/IMOEX.json: HTTPSConnectionPool(host='iss.moex.com', port=443): Max retries exceeded with url: /iss/history/engines/stock/markets/index/securities/IMOEX.json?iss.meta=off&from=2026-11-13&history.columns=TRADEDATE%2CCLOSE&start=0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))"
+  }
+ ]
+}
