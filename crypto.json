@@ -1,0 +1,9574 @@
+{
+ "id": "crypto",
+ "title": "Крипто: BTC 24/7",
+ "strategy": "Пересечение средних 24/120 свечей",
+ "start_capital": 10.0,
+ "cash_rub": 9.34202589,
+ "positions": {},
+ "target": {},
+ "pending": null,
+ "last_signal_date": null,
+ "history": [
+  {
+   "t": "2026-09-19 23:59",
+   "equity": 9.96,
+   "withdrawn": 0,
+   "tmos": 81143.97,
+   "bench": 9.97,
+   "live": true
+  },
+  {
+   "t": "2026-09-20 23:57",
+   "equity": 9.95,
+   "withdrawn": 0,
+   "tmos": 81095.92,
+   "bench": 9.97,
+   "live": true
+  },
+  {
+   "t": "2026-09-21 23:55",
+   "equity": 10.11,
+   "withdrawn": 0.55,
+   "tmos": 86935.46,
+   "bench": 10.68,
+   "live": true
+  },
+  {
+   "t": "2026-09-22 23:54",
+   "equity": 10.03,
+   "withdrawn": 0.55,
+   "tmos": 86226.0,
+   "bench": 10.6,
+   "live": true
+  },
+  {
+   "t": "2026-09-23 23:59",
+   "equity": 9.8,
+   "withdrawn": 0.55,
+   "tmos": 84232.85,
+   "bench": 10.35,
+   "live": true
+  },
+  {
+   "t": "2026-09-24 23:55",
+   "equity": 9.8,
+   "withdrawn": 0.55,
+   "tmos": 84292.99,
+   "bench": 10.39,
+   "live": true
+  },
+  {
+   "t": "2026-09-25 23:56",
+   "equity": 9.77,
+   "withdrawn": 0.55,
+   "tmos": 83850.0,
+   "bench": 10.33,
+   "live": true
+  },
+  {
+   "t": "2026-09-26 23:58",
+   "equity": 9.77,
+   "withdrawn": 0.55,
+   "tmos": 84023.25,
+   "bench": 10.35,
+   "live": true
+  },
+  {
+   "t": "2026-09-27 23:58",
+   "equity": 9.73,
+   "withdrawn": 0.55,
+   "tmos": 84552.0,
+   "bench": 10.42,
+   "live": true
+  },
+  {
+   "t": "2026-09-28 13:33",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 82838.01,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-09-29 23:56",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 83639.65,
+   "bench": 10.31,
+   "live": true
+  },
+  {
+   "t": "2026-09-30 23:56",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 83652.81,
+   "bench": 10.31,
+   "live": true
+  },
+  {
+   "t": "2026-10-01 21:01",
+   "equity": 9.46,
+   "withdrawn": 0.55,
+   "tmos": 84796.0,
+   "bench": 10.45,
+   "live": true
+  },
+  {
+   "t": "2026-10-02 23:56",
+   "equity": 9.4,
+   "withdrawn": 0.55,
+   "tmos": 84388.01,
+   "bench": 10.4,
+   "live": true
+  },
+  {
+   "t": "2026-10-03 23:57",
+   "equity": 9.44,
+   "withdrawn": 0.55,
+   "tmos": 84746.0,
+   "bench": 10.44,
+   "live": true
+  },
+  {
+   "t": "2026-10-04 23:58",
+   "equity": 9.56,
+   "withdrawn": 0.55,
+   "tmos": 85815.46,
+   "bench": 10.58,
+   "live": true
+  },
+  {
+   "t": "2026-10-05 22:03",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85573.68,
+   "bench": 10.55,
+   "live": true
+  },
+  {
+   "t": "2026-10-06 21:20",
+   "equity": 9.55,
+   "withdrawn": 0.55,
+   "tmos": 85724.01,
+   "bench": 10.56,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 01:08",
+   "equity": 9.54,
+   "withdrawn": 0.55,
+   "tmos": 85626.54,
+   "bench": 10.55,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 01:13",
+   "equity": 9.54,
+   "withdrawn": 0.55,
+   "tmos": 85592.07,
+   "bench": 10.55,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 01:18",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85554.0,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 01:23",
+   "equity": 9.54,
+   "withdrawn": 0.55,
+   "tmos": 85588.01,
+   "bench": 10.55,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 01:28",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85520.25,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 01:33",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85504.01,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 01:38",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85528.2,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 01:43",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85551.99,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 01:48",
+   "equity": 9.54,
+   "withdrawn": 0.55,
+   "tmos": 85585.07,
+   "bench": 10.55,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 01:53",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85553.92,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 01:59",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85534.53,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 02:04",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85528.27,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 02:09",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85504.0,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 02:14",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85497.86,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 02:19",
+   "equity": 9.52,
+   "withdrawn": 0.55,
+   "tmos": 85475.13,
+   "bench": 10.53,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 02:24",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85531.48,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 02:29",
+   "equity": 9.52,
+   "withdrawn": 0.55,
+   "tmos": 85479.77,
+   "bench": 10.53,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 02:34",
+   "equity": 9.51,
+   "withdrawn": 0.55,
+   "tmos": 85363.06,
+   "bench": 10.52,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 02:40",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85503.11,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 02:45",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85575.35,
+   "bench": 10.55,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 02:50",
+   "equity": 9.54,
+   "withdrawn": 0.55,
+   "tmos": 85619.21,
+   "bench": 10.55,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 02:55",
+   "equity": 9.54,
+   "withdrawn": 0.55,
+   "tmos": 85582.55,
+   "bench": 10.55,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 03:00",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85543.84,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 03:05",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85494.0,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 03:10",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85560.48,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 03:15",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85576.01,
+   "bench": 10.55,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 03:20",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85548.02,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 03:25",
+   "equity": 9.52,
+   "withdrawn": 0.55,
+   "tmos": 85464.92,
+   "bench": 10.53,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 03:30",
+   "equity": 9.52,
+   "withdrawn": 0.55,
+   "tmos": 85410.01,
+   "bench": 10.53,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 03:35",
+   "equity": 9.52,
+   "withdrawn": 0.55,
+   "tmos": 85466.47,
+   "bench": 10.53,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 03:40",
+   "equity": 9.52,
+   "withdrawn": 0.55,
+   "tmos": 85482.01,
+   "bench": 10.53,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 03:45",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85523.93,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 03:50",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85542.0,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 03:55",
+   "equity": 9.53,
+   "withdrawn": 0.55,
+   "tmos": 85530.68,
+   "bench": 10.54,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 04:01",
+   "equity": 9.52,
+   "withdrawn": 0.55,
+   "tmos": 85480.0,
+   "bench": 10.53,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 04:06",
+   "equity": 9.52,
+   "withdrawn": 0.55,
+   "tmos": 85452.21,
+   "bench": 10.53,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 04:11",
+   "equity": 9.52,
+   "withdrawn": 0.55,
+   "tmos": 85436.0,
+   "bench": 10.53,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 04:16",
+   "equity": 9.52,
+   "withdrawn": 0.55,
+   "tmos": 85445.26,
+   "bench": 10.53,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 04:21",
+   "equity": 9.51,
+   "withdrawn": 0.55,
+   "tmos": 85378.7,
+   "bench": 10.52,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 04:27",
+   "equity": 9.51,
+   "withdrawn": 0.55,
+   "tmos": 85311.1,
+   "bench": 10.51,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 04:32",
+   "equity": 9.5,
+   "withdrawn": 0.55,
+   "tmos": 85304.83,
+   "bench": 10.51,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 04:37",
+   "equity": 9.49,
+   "withdrawn": 0.55,
+   "tmos": 85200.05,
+   "bench": 10.5,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 04:42",
+   "equity": 9.5,
+   "withdrawn": 0.55,
+   "tmos": 85292.08,
+   "bench": 10.51,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 04:47",
+   "equity": 9.5,
+   "withdrawn": 0.55,
+   "tmos": 85292.02,
+   "bench": 10.51,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 04:52",
+   "equity": 9.49,
+   "withdrawn": 0.55,
+   "tmos": 85208.43,
+   "bench": 10.5,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 04:57",
+   "equity": 9.45,
+   "withdrawn": 0.55,
+   "tmos": 84826.73,
+   "bench": 10.45,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 05:02",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84143.47,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 05:08",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83871.27,
+   "bench": 10.34,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 05:13",
+   "equity": 9.35,
+   "withdrawn": 0.55,
+   "tmos": 83920.0,
+   "bench": 10.34,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 05:18",
+   "equity": 9.36,
+   "withdrawn": 0.55,
+   "tmos": 84033.42,
+   "bench": 10.36,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 05:23",
+   "equity": 9.35,
+   "withdrawn": 0.55,
+   "tmos": 83912.99,
+   "bench": 10.34,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 05:28",
+   "equity": 9.33,
+   "withdrawn": 0.55,
+   "tmos": 83772.91,
+   "bench": 10.32,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 05:33",
+   "equity": 9.35,
+   "withdrawn": 0.55,
+   "tmos": 83898.0,
+   "bench": 10.34,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 05:38",
+   "equity": 9.35,
+   "withdrawn": 0.55,
+   "tmos": 83898.0,
+   "bench": 10.34,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 05:43",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83810.01,
+   "bench": 10.33,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 05:48",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83864.27,
+   "bench": 10.34,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 05:53",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83862.84,
+   "bench": 10.34,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 05:58",
+   "equity": 9.35,
+   "withdrawn": 0.55,
+   "tmos": 83875.97,
+   "bench": 10.34,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 06:03",
+   "equity": 9.36,
+   "withdrawn": 0.55,
+   "tmos": 84042.0,
+   "bench": 10.36,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 06:08",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84095.73,
+   "bench": 10.36,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 06:13",
+   "equity": 9.36,
+   "withdrawn": 0.55,
+   "tmos": 83988.01,
+   "bench": 10.35,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 06:18",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84086.0,
+   "bench": 10.36,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 06:24",
+   "equity": 9.36,
+   "withdrawn": 0.55,
+   "tmos": 84016.0,
+   "bench": 10.35,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 06:29",
+   "equity": 9.36,
+   "withdrawn": 0.55,
+   "tmos": 83975.89,
+   "bench": 10.35,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 06:34",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84075.72,
+   "bench": 10.36,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 06:39",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84128.26,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 06:44",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84140.01,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 06:49",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84236.01,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 06:54",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84225.68,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 06:59",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84144.0,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 07:04",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84216.01,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 07:10",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84148.14,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 07:15",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84138.02,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 07:20",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84054.27,
+   "bench": 10.36,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 07:25",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84128.01,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 07:30",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84130.01,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 07:36",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84069.74,
+   "bench": 10.36,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 07:41",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84107.4,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 07:46",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84120.0,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 07:51",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84152.01,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 07:56",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84086.78,
+   "bench": 10.36,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 08:02",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84112.0,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 08:07",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84144.01,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 08:12",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84160.2,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 08:17",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84170.01,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 08:22",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84233.34,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 08:27",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84226.92,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 08:32",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84240.01,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 08:37",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84186.01,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 08:42",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84238.34,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 08:47",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84243.47,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 08:52",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84286.66,
+   "bench": 10.39,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 08:57",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84287.07,
+   "bench": 10.39,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 09:02",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84322.14,
+   "bench": 10.39,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 09:07",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84293.33,
+   "bench": 10.39,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 09:12",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84296.81,
+   "bench": 10.39,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 09:17",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84278.05,
+   "bench": 10.39,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 09:22",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84203.49,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 09:27",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84162.01,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 09:32",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84181.96,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 09:37",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84313.01,
+   "bench": 10.39,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 09:42",
+   "equity": 9.4,
+   "withdrawn": 0.55,
+   "tmos": 84335.11,
+   "bench": 10.39,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 09:47",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84318.0,
+   "bench": 10.39,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 09:53",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84294.01,
+   "bench": 10.39,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 09:58",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84262.09,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 10:04",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84215.35,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 10:09",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84155.99,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 10:14",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84265.73,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 10:19",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84186.15,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 10:24",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84236.01,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 10:29",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84219.85,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 10:34",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84250.01,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 10:40",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84229.35,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 10:45",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84290.0,
+   "bench": 10.39,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 10:50",
+   "equity": 9.39,
+   "withdrawn": 0.55,
+   "tmos": 84236.01,
+   "bench": 10.38,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 10:55",
+   "equity": 9.38,
+   "withdrawn": 0.55,
+   "tmos": 84144.0,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 11:00",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84102.0,
+   "bench": 10.36,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 11:05",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84104.47,
+   "bench": 10.36,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 11:10",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84066.01,
+   "bench": 10.36,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 11:16",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84058.0,
+   "bench": 10.36,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 11:21",
+   "equity": 9.36,
+   "withdrawn": 0.55,
+   "tmos": 84014.01,
+   "bench": 10.35,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 11:26",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84057.62,
+   "bench": 10.36,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 11:31",
+   "equity": 9.36,
+   "withdrawn": 0.55,
+   "tmos": 84034.0,
+   "bench": 10.36,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 11:36",
+   "equity": 9.37,
+   "withdrawn": 0.55,
+   "tmos": 84116.0,
+   "bench": 10.37,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 11:41",
+   "equity": 9.36,
+   "withdrawn": 0.55,
+   "tmos": 84036.87,
+   "bench": 10.36,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 11:46",
+   "equity": 9.36,
+   "withdrawn": 0.55,
+   "tmos": 84017.93,
+   "bench": 10.35,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 11:51",
+   "equity": 9.36,
+   "withdrawn": 0.55,
+   "tmos": 83988.0,
+   "bench": 10.35,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 11:56",
+   "equity": 9.36,
+   "withdrawn": 0.55,
+   "tmos": 84014.0,
+   "bench": 10.35,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 12:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83976.41,
+   "bench": 10.35,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 12:06",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 84002.83,
+   "bench": 10.35,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 12:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83910.0,
+   "bench": 10.34,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 12:16",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83900.0,
+   "bench": 10.34,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 12:21",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83790.29,
+   "bench": 10.33,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 12:26",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83850.52,
+   "bench": 10.33,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 12:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83836.83,
+   "bench": 10.33,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 12:36",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83704.9,
+   "bench": 10.32,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 12:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83650.0,
+   "bench": 10.31,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 12:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83830.01,
+   "bench": 10.33,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 15:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83450.01,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 15:32",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83516.58,
+   "bench": 10.29,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 15:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83718.01,
+   "bench": 10.32,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 15:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83503.72,
+   "bench": 10.29,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 15:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83461.64,
+   "bench": 10.29,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 15:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83440.0,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 15:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83442.0,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 16:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83385.52,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 16:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83526.0,
+   "bench": 10.29,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 16:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83468.0,
+   "bench": 10.29,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 16:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83432.0,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 16:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83404.52,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 16:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83336.01,
+   "bench": 10.27,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 16:33",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83402.8,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 16:38",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83200.01,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 16:43",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83100.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 16:48",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82829.06,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 16:53",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83267.84,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 16:58",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83300.02,
+   "bench": 10.27,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 17:03",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83184.08,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 17:08",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83252.9,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 17:13",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83240.16,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 17:18",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83067.5,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 17:23",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83106.43,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 17:28",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83030.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 17:33",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83091.46,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 17:38",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83072.01,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 17:43",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82998.36,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 17:49",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82982.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 17:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83002.69,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 17:59",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83010.45,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 18:04",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82912.92,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 18:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82917.19,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 18:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83120.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 18:19",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83024.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 18:24",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83038.42,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 18:29",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83038.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 18:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83250.96,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 18:40",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83274.0,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 18:45",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83334.0,
+   "bench": 10.27,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 18:50",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83382.86,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 18:55",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83420.35,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 19:00",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83419.54,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 19:05",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83555.55,
+   "bench": 10.3,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 19:10",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83589.02,
+   "bench": 10.3,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 19:15",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83550.4,
+   "bench": 10.3,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 19:21",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83621.99,
+   "bench": 10.31,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 19:26",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83556.0,
+   "bench": 10.3,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 19:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83580.0,
+   "bench": 10.3,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 19:36",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83561.6,
+   "bench": 10.3,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 19:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83410.0,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 19:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83484.02,
+   "bench": 10.29,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 19:51",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83424.01,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 19:56",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83388.01,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 20:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83422.01,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 20:06",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83503.74,
+   "bench": 10.29,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 20:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83552.01,
+   "bench": 10.3,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 20:16",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83506.01,
+   "bench": 10.29,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 20:21",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83512.0,
+   "bench": 10.29,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 20:26",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83304.01,
+   "bench": 10.27,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 20:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83232.01,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 20:36",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83221.44,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 20:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83156.0,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 20:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83120.2,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 20:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83161.83,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 20:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83188.01,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 21:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83268.0,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 21:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83408.01,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 21:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83356.0,
+   "bench": 10.27,
+   "live": true
+  },
+  {
+   "t": "2026-10-07 21:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83342.93,
+   "bench": 10.27,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 01:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83279.65,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 01:36",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83302.0,
+   "bench": 10.27,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 01:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83219.98,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 01:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83258.65,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 01:51",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83238.81,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 01:56",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83232.97,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 02:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83220.33,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 02:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83221.32,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 02:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83138.14,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 02:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83237.87,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 02:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83286.47,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 02:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83322.01,
+   "bench": 10.27,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 02:32",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83384.01,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 02:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83389.82,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 02:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83346.55,
+   "bench": 10.27,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 02:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83336.0,
+   "bench": 10.27,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 02:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83318.01,
+   "bench": 10.27,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 02:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83294.66,
+   "bench": 10.27,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 03:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83262.01,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 03:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83278.02,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 03:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83250.43,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 03:18",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83333.27,
+   "bench": 10.27,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 03:23",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83293.86,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 03:28",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83250.0,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 03:33",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83258.07,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 03:38",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83244.01,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 03:43",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83230.71,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 03:48",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83330.0,
+   "bench": 10.27,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 03:53",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83426.79,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 03:58",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83400.0,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 04:03",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83428.01,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 04:08",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83480.0,
+   "bench": 10.29,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 04:13",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83402.01,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 04:18",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83382.01,
+   "bench": 10.28,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 04:23",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83182.99,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 04:28",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83256.01,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 04:33",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83364.01,
+   "bench": 10.27,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 04:38",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83274.66,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 04:43",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83291.09,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 04:48",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83225.42,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 04:53",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83202.0,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 04:58",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83097.08,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 05:03",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83136.01,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 05:08",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83050.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 05:13",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83046.34,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 05:18",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83046.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 05:24",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83139.38,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 05:29",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83149.69,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 05:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83179.01,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 05:39",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83197.16,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 05:44",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83266.0,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 05:49",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83252.01,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 05:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83128.25,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 05:59",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83164.01,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 06:04",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83030.44,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 06:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82989.99,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 06:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82927.92,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 06:19",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82870.74,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 06:24",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82963.23,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 06:29",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82970.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 06:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82859.0,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 06:39",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82899.82,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 06:44",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82851.32,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 06:49",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82865.69,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 06:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82720.22,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 06:59",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82750.03,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 07:04",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82674.62,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 07:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82800.99,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 07:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82671.4,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 07:20",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82603.46,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 07:26",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82801.32,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 07:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82918.24,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 07:36",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82782.14,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 07:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82556.01,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 07:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82491.69,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 07:51",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82590.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 07:56",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82648.01,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 08:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82718.7,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 08:06",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82620.7,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 08:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82676.22,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 08:16",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82762.01,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 08:21",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82859.35,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 08:26",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82940.01,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 08:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82890.0,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 08:36",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83025.78,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 08:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82950.01,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 08:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82868.0,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 08:51",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82851.08,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 08:56",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82753.14,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 09:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82668.98,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 09:06",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82886.0,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 09:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82924.36,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 09:16",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82912.95,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 09:21",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82818.85,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 09:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82609.49,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 09:32",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82523.53,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 09:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82632.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 09:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82698.04,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 09:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82766.46,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 09:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82821.7,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 09:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82889.97,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 10:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82768.01,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 10:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82934.03,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 10:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82996.26,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 10:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83111.99,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 10:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83220.0,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 10:28",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83116.98,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 10:33",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83142.98,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 10:38",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83208.0,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 10:43",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83098.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 10:48",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83075.03,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 10:53",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83060.56,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 10:58",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83012.24,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 11:04",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82961.33,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 11:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83042.75,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 11:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82958.0,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 11:19",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83056.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 11:24",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82937.25,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 11:29",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82975.74,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 11:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82866.74,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 11:39",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82852.04,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 11:44",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82894.01,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 11:49",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82901.84,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 11:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82844.0,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 11:59",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82859.86,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 12:04",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82973.86,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 12:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83035.03,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 12:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83029.38,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 12:19",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82949.65,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 12:24",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83075.57,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 12:29",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83030.93,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 12:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83144.18,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 12:39",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83146.01,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 12:44",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83090.01,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 12:49",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83098.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 12:55",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83084.3,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 13:00",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83130.39,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 13:05",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83108.42,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 13:10",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83028.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 15:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82386.0,
+   "bench": 10.15,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 15:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82374.0,
+   "bench": 10.15,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 15:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82273.16,
+   "bench": 10.14,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 15:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82270.01,
+   "bench": 10.14,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 15:58",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82296.04,
+   "bench": 10.14,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 16:03",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82228.0,
+   "bench": 10.13,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 16:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82434.0,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 16:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82483.62,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 16:20",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82593.98,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 16:25",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82494.01,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 16:30",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82444.0,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 16:35",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82255.44,
+   "bench": 10.14,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 16:40",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82095.75,
+   "bench": 10.12,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 16:45",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82024.59,
+   "bench": 10.11,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 16:50",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82094.02,
+   "bench": 10.12,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 16:55",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82111.27,
+   "bench": 10.12,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 17:00",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82171.72,
+   "bench": 10.13,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 17:05",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82344.01,
+   "bench": 10.15,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 17:10",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82467.38,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 17:15",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82560.21,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 17:20",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82557.98,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 17:25",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82559.19,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 17:30",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82686.01,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 17:35",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82676.0,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 17:40",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82600.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 17:45",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82575.05,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 17:50",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82704.01,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 17:56",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82693.31,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 18:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82659.89,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 18:06",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82488.19,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 18:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82312.98,
+   "bench": 10.14,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 18:16",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82091.75,
+   "bench": 10.12,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 18:21",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81711.47,
+   "bench": 10.07,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 18:26",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81421.38,
+   "bench": 10.03,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 18:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81417.42,
+   "bench": 10.03,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 18:36",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81246.85,
+   "bench": 10.01,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 18:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81212.98,
+   "bench": 10.01,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 18:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81191.43,
+   "bench": 10.01,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 18:51",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81484.01,
+   "bench": 10.04,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 18:56",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81090.75,
+   "bench": 9.99,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 19:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81007.0,
+   "bench": 9.98,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 19:06",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81016.22,
+   "bench": 9.98,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 19:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81211.11,
+   "bench": 10.01,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 19:16",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80961.3,
+   "bench": 9.98,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 19:21",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81388.03,
+   "bench": 10.03,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 19:26",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81364.94,
+   "bench": 10.03,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 19:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81258.54,
+   "bench": 10.01,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 19:36",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81294.0,
+   "bench": 10.02,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 19:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81385.99,
+   "bench": 10.03,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 19:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81356.0,
+   "bench": 10.03,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 19:51",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80976.0,
+   "bench": 9.98,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 19:56",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80994.85,
+   "bench": 9.98,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 20:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80842.01,
+   "bench": 9.96,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 20:06",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80714.58,
+   "bench": 9.95,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 20:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80760.83,
+   "bench": 9.95,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 20:16",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80806.0,
+   "bench": 9.96,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 20:21",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80785.16,
+   "bench": 9.96,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 20:26",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80465.44,
+   "bench": 9.92,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 20:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80811.64,
+   "bench": 9.96,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 20:36",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80903.79,
+   "bench": 9.97,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 20:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80880.01,
+   "bench": 9.97,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 20:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80882.43,
+   "bench": 9.97,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 20:51",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80583.18,
+   "bench": 9.93,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 20:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80722.71,
+   "bench": 9.95,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 21:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80750.9,
+   "bench": 9.95,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 21:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80568.01,
+   "bench": 9.93,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 21:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80610.23,
+   "bench": 9.93,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 21:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 80941.7,
+   "bench": 9.98,
+   "live": true
+  },
+  {
+   "t": "2026-10-08 21:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81322.84,
+   "bench": 10.02,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 01:44",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81920.0,
+   "bench": 10.1,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 01:49",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81928.01,
+   "bench": 10.1,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 01:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81868.01,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 01:59",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81883.91,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 02:04",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81894.01,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 02:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81854.01,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 02:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81845.53,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 02:19",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81849.21,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 02:24",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81914.01,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 02:29",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81839.99,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 02:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81870.95,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 02:39",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81836.01,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 02:45",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81812.0,
+   "bench": 10.08,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 02:50",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81763.5,
+   "bench": 10.08,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 02:55",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81723.15,
+   "bench": 10.07,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 03:00",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81767.38,
+   "bench": 10.08,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 03:05",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81816.01,
+   "bench": 10.08,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 03:10",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81814.0,
+   "bench": 10.08,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 03:15",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81826.65,
+   "bench": 10.08,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 03:20",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81743.8,
+   "bench": 10.07,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 03:26",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81710.01,
+   "bench": 10.07,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 03:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81872.0,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 03:36",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81842.02,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 03:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81776.0,
+   "bench": 10.08,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 03:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81822.01,
+   "bench": 10.08,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 03:51",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81848.01,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 03:56",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81910.45,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 04:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81841.99,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 04:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81740.01,
+   "bench": 10.07,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 04:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81732.01,
+   "bench": 10.07,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 04:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81656.63,
+   "bench": 10.06,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 04:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81636.0,
+   "bench": 10.06,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 04:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81884.0,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 04:33",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81726.01,
+   "bench": 10.07,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 04:38",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81788.01,
+   "bench": 10.08,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 04:43",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81990.06,
+   "bench": 10.1,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 04:48",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81902.99,
+   "bench": 10.09,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 04:53",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81976.01,
+   "bench": 10.1,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 04:58",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81962.01,
+   "bench": 10.1,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 05:03",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82008.8,
+   "bench": 10.11,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 05:08",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82105.24,
+   "bench": 10.12,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 05:13",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82018.01,
+   "bench": 10.11,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 05:18",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81990.01,
+   "bench": 10.1,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 05:23",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82000.01,
+   "bench": 10.11,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 05:28",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81942.05,
+   "bench": 10.1,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 05:33",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81956.01,
+   "bench": 10.1,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 05:38",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 81970.45,
+   "bench": 10.1,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 05:43",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82014.0,
+   "bench": 10.11,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 05:48",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82123.8,
+   "bench": 10.12,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 05:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82339.39,
+   "bench": 10.15,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 05:59",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82119.91,
+   "bench": 10.12,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 06:04",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82105.79,
+   "bench": 10.12,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 06:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82130.03,
+   "bench": 10.12,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 06:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82084.01,
+   "bench": 10.12,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 06:19",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82179.98,
+   "bench": 10.13,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 06:24",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82222.89,
+   "bench": 10.13,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 06:29",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82226.75,
+   "bench": 10.13,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 06:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82234.04,
+   "bench": 10.13,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 06:39",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82241.77,
+   "bench": 10.14,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 06:44",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82399.0,
+   "bench": 10.15,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 06:50",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82370.74,
+   "bench": 10.15,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 06:55",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82404.01,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 07:00",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82427.72,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 07:05",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82438.78,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 07:10",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82480.0,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 07:15",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82490.32,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 07:20",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82515.32,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 07:25",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82442.83,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 07:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82428.38,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 07:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82442.01,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 07:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82352.2,
+   "bench": 10.15,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 07:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82301.12,
+   "bench": 10.14,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 07:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82272.0,
+   "bench": 10.14,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 07:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82278.08,
+   "bench": 10.14,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 08:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82302.01,
+   "bench": 10.14,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 08:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82291.14,
+   "bench": 10.14,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 08:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82349.56,
+   "bench": 10.15,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 08:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82422.39,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 08:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82442.0,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 08:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82514.0,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 08:32",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82526.01,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 08:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82586.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 08:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82483.08,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 08:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82429.75,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 08:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82352.27,
+   "bench": 10.15,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 08:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82385.52,
+   "bench": 10.15,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 09:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82379.96,
+   "bench": 10.15,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 09:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82438.01,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 09:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82443.0,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 09:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82448.0,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 09:23",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82439.22,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 09:28",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82489.48,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 09:33",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82526.0,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 09:38",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82528.0,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 09:43",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82567.67,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 09:48",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82588.65,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 09:53",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82568.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 09:58",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82574.74,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 10:04",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82526.19,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 10:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82519.06,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 10:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82520.01,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 10:19",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82559.97,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 10:24",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82589.28,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 10:29",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82523.27,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 10:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82599.66,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 10:39",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82548.62,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 10:45",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82548.35,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 10:50",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82501.0,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 10:55",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82624.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 11:00",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82638.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 11:05",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82652.99,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 11:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82696.0,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 11:16",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82646.01,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 11:21",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82640.0,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 11:26",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82598.0,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 11:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82540.0,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 11:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82548.0,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 11:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82550.02,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 11:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82582.0,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 11:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82629.99,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 11:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82666.9,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 12:03",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82621.98,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 12:08",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82570.56,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 12:13",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82581.07,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 12:18",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82600.47,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 12:23",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82645.53,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 12:29",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82666.81,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 12:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82627.18,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 12:39",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82607.24,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 12:44",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82600.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 12:49",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82641.29,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 12:55",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82672.0,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 13:00",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82668.72,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 13:05",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82706.0,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 13:10",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82687.59,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 13:15",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82714.26,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 13:20",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82653.97,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 13:25",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82646.01,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 15:24",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83164.01,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 15:29",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83111.21,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 15:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83186.0,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 15:40",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83141.1,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 15:45",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83066.85,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 15:50",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83056.35,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 15:55",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82945.53,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 16:00",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83096.46,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 16:05",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83046.27,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 16:10",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83084.59,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 16:15",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83062.12,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 16:20",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83100.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 16:25",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83036.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 16:30",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82974.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 16:35",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82674.58,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 16:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82521.99,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 16:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82540.01,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 16:51",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82735.26,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 16:56",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82698.01,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 17:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82554.0,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 17:06",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82720.01,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 17:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82726.0,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 17:16",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83013.5,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 17:21",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83084.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 17:26",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83124.01,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 17:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83244.0,
+   "bench": 10.26,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 17:36",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83210.01,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 17:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82970.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 17:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83004.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 17:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83037.3,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 17:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83130.01,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 18:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83018.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 18:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82904.0,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 18:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82906.44,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 18:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82972.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 18:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82968.0,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 18:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82913.97,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 18:32",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83048.5,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 18:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82943.35,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 18:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82994.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 18:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82996.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 18:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82973.99,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 18:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82867.05,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 19:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82794.42,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 19:08",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82890.0,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 19:13",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82944.7,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 19:18",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82935.0,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 19:23",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82836.01,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 19:28",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82738.31,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 19:33",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82816.01,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 19:38",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82766.01,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 19:44",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82726.0,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 19:49",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82812.7,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 19:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82782.01,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 19:59",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82742.04,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 20:04",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82730.01,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 20:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82714.01,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 20:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82633.84,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 20:19",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82645.13,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 20:24",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82533.41,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 20:29",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82689.6,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 20:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82696.93,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 20:39",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82688.65,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 20:44",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82699.89,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 20:49",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82696.14,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 20:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82716.0,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 20:59",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82737.59,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 21:04",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82674.01,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-09 21:10",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82695.4,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 01:06",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82474.0,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 01:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82471.9,
+   "bench": 10.16,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 01:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82506.86,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 01:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82535.04,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 01:28",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82512.01,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 01:33",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82597.69,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 01:38",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82640.0,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 01:43",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82632.03,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 01:48",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82630.0,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 01:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82630.0,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 01:59",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82639.76,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 02:04",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82627.49,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 02:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82630.0,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 02:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82628.03,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 02:19",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82684.99,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 02:24",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82657.99,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 02:30",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82619.99,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 02:35",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82622.03,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 02:40",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82597.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 02:45",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82647.32,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 02:50",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82679.25,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 02:56",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82659.61,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 03:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82608.41,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 03:06",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82569.75,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 03:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82621.38,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 03:16",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82629.24,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 03:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82622.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 03:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82590.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 03:32",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82586.41,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 03:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82571.78,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 03:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82579.19,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 03:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82550.01,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 03:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82588.62,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 03:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82576.0,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 04:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82564.35,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 04:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82597.66,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 04:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82652.3,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 04:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82661.89,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 04:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82621.32,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 04:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82673.74,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 04:32",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82646.01,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 04:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82635.29,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 04:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82668.15,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 04:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82705.16,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 04:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82708.0,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 04:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82692.01,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 05:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82693.3,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 05:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82686.0,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 05:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82698.64,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 05:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82676.09,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 05:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82675.04,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 05:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82632.0,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 05:32",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82632.0,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 05:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82658.0,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 05:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82640.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 05:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82616.68,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 05:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82644.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 05:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82630.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 06:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82614.53,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 06:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82600.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 06:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82600.0,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 06:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82580.0,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 06:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82580.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 06:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82589.17,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 06:32",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82589.17,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 06:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82560.0,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 06:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82562.37,
+   "bench": 10.17,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 06:48",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82594.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 06:53",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82580.0,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 06:58",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82590.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 07:03",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82684.01,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 07:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82716.0,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 07:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82710.0,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 07:19",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82685.24,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 07:24",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82659.03,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 07:29",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82660.0,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 07:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82650.04,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 07:39",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82660.0,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 07:44",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82676.01,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 07:49",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82668.4,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 07:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82706.84,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 07:59",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82686.87,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 08:05",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82674.55,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 08:10",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82683.52,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 08:15",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82703.28,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 08:20",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82684.01,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 08:25",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82694.0,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 08:30",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82668.55,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 08:35",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82714.96,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 08:40",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82783.37,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 08:45",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82775.06,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 08:50",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82779.04,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 08:55",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82779.01,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 09:00",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82842.01,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 09:05",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82770.01,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 09:10",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82787.28,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 09:15",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82766.06,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 09:20",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82774.87,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 09:25",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82785.1,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 09:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82772.26,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 09:36",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82780.1,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 09:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82793.18,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 09:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82838.04,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 09:51",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82806.01,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 09:56",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82783.11,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 10:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82756.01,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 10:06",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82714.82,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 10:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82667.87,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 10:16",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82664.01,
+   "bench": 10.19,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 10:21",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82640.31,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 10:26",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82640.3,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 10:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82640.01,
+   "bench": 10.18,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 10:36",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82742.0,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 10:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82754.63,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 10:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82743.95,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 10:51",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82777.26,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 10:56",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82792.01,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 11:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82806.01,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 11:06",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82837.76,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 11:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82822.37,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 11:16",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82839.96,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 11:21",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82843.4,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 11:26",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82826.03,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 11:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82827.43,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 11:36",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82829.84,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 11:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82808.94,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 11:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82781.99,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 11:51",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82824.74,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 11:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82848.0,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 12:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82858.54,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 12:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82861.26,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 12:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82947.0,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 12:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82888.22,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 12:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82904.18,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 12:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82883.38,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 12:32",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82912.69,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 12:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82922.0,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 12:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82901.15,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 12:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82869.29,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 14:43",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82885.95,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 14:48",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82888.0,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 14:53",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82888.01,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 14:58",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82879.71,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 15:03",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82861.34,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 15:08",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82858.98,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 15:13",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82873.03,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 15:18",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82870.0,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 15:23",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82864.5,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 15:28",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82838.01,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 15:33",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82859.26,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 15:38",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82828.67,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 15:43",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82854.01,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 15:48",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82822.01,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 15:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82818.0,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 15:59",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82808.01,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 16:04",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82829.31,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 16:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82821.8,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 16:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82824.14,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 16:19",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82849.99,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 16:24",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82859.99,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 16:29",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82857.98,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 16:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82857.63,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 16:39",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82826.0,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 16:44",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82788.15,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 16:49",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82824.01,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 16:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82820.01,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 17:00",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82830.26,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 17:05",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82778.01,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 17:10",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82780.01,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 17:15",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82791.2,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 17:20",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82808.04,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 17:25",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82828.57,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 17:30",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82942.01,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 17:35",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82954.01,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 17:40",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83060.01,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 17:45",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83033.99,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 17:50",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82979.46,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 17:56",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83000.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 18:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83000.86,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 18:06",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83040.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 18:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83012.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 18:16",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82958.0,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 18:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82953.63,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 18:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82980.57,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 18:32",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83028.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 18:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83030.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 18:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83033.19,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 18:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83047.31,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 18:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83056.18,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 18:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82994.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 19:03",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83037.19,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 19:08",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82978.07,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 19:13",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83038.02,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 19:18",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83068.42,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 19:23",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83038.02,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 19:28",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83001.27,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 19:33",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83020.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 19:38",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83046.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 19:43",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83072.51,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 19:48",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83045.6,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 19:53",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83050.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 19:58",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82994.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 20:03",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83070.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 20:08",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83064.02,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 20:13",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83058.01,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 20:18",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83063.16,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 20:23",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83034.57,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 20:28",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83061.99,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 20:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83063.12,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 20:39",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83142.01,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 20:44",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83148.0,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 20:49",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83173.29,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 20:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83151.87,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 20:59",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83118.01,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 21:04",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83092.01,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 21:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83120.02,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 21:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83063.72,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 21:19",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83074.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 21:24",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83024.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 21:29",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83020.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 21:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83040.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 21:39",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83026.49,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 21:45",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83026.16,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 21:50",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83048.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 21:55",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83034.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 22:00",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83034.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 22:05",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83034.02,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 22:10",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83038.68,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 22:15",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83034.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 22:20",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83034.04,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 22:25",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83034.05,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 22:30",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83043.55,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 22:36",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83088.87,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 22:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83095.93,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 22:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83085.14,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 22:51",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83087.11,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 22:56",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83087.13,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 23:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83085.44,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 23:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83099.99,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 23:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83047.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 23:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83038.64,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 23:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83054.77,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 23:28",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83076.96,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 23:33",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83037.98,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 23:38",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83059.51,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 23:43",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83068.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 23:48",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83068.79,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 23:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83078.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-10 23:59",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83040.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 00:04",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83057.28,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 00:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83050.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 00:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83020.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 00:19",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83055.72,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 00:24",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83060.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 00:29",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83049.44,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 00:34",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83078.89,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 00:39",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83078.89,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 00:45",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83079.02,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 00:50",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83076.94,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 00:55",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83050.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 01:00",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83040.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 01:05",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83049.22,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 01:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83030.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 01:16",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83036.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 01:21",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82994.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 01:26",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82999.06,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 01:31",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83040.86,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 01:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83068.21,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 01:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83062.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 01:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82988.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 01:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83054.98,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 01:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83086.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 02:03",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83094.01,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 02:08",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83064.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 02:13",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83064.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 02:18",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83055.42,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 02:23",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83048.27,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 02:28",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83033.12,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 02:33",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83063.62,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 02:39",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83047.44,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 02:44",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83021.58,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 02:49",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83010.54,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 02:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83030.61,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 02:59",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82988.36,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 03:04",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83002.68,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 03:09",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83009.85,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 03:14",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83030.17,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 03:19",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83000.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 03:25",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82995.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 03:30",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82977.95,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 03:35",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82990.41,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 03:41",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82986.04,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 03:46",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82969.23,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 03:51",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82992.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 03:56",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82962.01,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 04:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82966.01,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 04:06",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82976.76,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 04:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82990.14,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 04:16",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83021.17,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 04:21",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83021.64,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 04:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83019.85,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 04:32",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83037.35,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 04:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83059.99,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 04:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83059.63,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 04:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83018.15,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 04:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83040.61,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 04:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83024.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 05:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83014.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 05:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83041.55,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 05:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83053.44,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 05:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83053.45,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 05:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83050.74,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 05:28",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83056.76,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 05:33",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83070.57,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 05:38",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83085.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 05:44",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83150.0,
+   "bench": 10.25,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 05:49",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83111.1,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 05:54",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83110.14,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 06:00",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83097.39,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 06:05",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83065.88,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 06:10",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83017.42,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 06:15",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82976.77,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 06:20",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82944.16,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 06:25",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82920.57,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 06:30",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82926.01,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 06:35",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82995.9,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 06:40",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82983.84,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 06:45",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82982.0,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 06:50",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82907.15,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 06:55",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82860.01,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 07:01",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82806.77,
+   "bench": 10.2,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 07:06",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82871.99,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 07:11",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82868.01,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 07:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82880.01,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 07:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82886.0,
+   "bench": 10.21,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 07:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82904.01,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 07:32",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82956.01,
+   "bench": 10.22,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 07:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82988.62,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 07:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 82995.23,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 07:47",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83004.01,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 07:52",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83012.52,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 07:57",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83028.18,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 08:02",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83036.32,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 08:07",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83060.0,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 08:12",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83044.51,
+   "bench": 10.23,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 08:17",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83065.55,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 08:22",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83078.36,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 08:27",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83085.15,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 08:32",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83090.01,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 08:37",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83075.57,
+   "bench": 10.24,
+   "live": true
+  },
+  {
+   "t": "2026-10-11 08:42",
+   "equity": 9.34,
+   "withdrawn": 0.55,
+   "tmos": 83074.01,
+   "bench": 10.24,
+   "live": true
+  }
+ ],
+ "trades": [
+  {
+   "time": "2026-09-19 22:53",
+   "ticker": "BTCUSDT",
+   "side": "BUY",
+   "qty": 0.0001227,
+   "price": 81375.06,
+   "cost": 0.014977,
+   "reason": "сигнал на покупку"
+  },
+  {
+   "time": "2026-09-21 18:45",
+   "ticker": "BTCUSDT",
+   "side": "SELL",
+   "qty": 6.41e-06,
+   "price": 86056.19,
+   "cost": 0.000827,
+   "reason": "вывод прибыли"
+  },
+  {
+   "time": "2026-09-25 02:00",
+   "ticker": "BTCUSDT",
+   "side": "SELL",
+   "qty": 0.00011629,
+   "price": 84280.01,
+   "cost": 0.014701,
+   "reason": "сигнал на выход"
+  },
+  {
+   "time": "2026-09-25 02:03",
+   "ticker": "BTCUSDT",
+   "side": "BUY",
+   "qty": 0.0001159,
+   "price": 84317.27,
+   "cost": 0.014659,
+   "reason": "сигнал на покупку"
+  },
+  {
+   "time": "2026-09-25 03:00",
+   "ticker": "BTCUSDT",
+   "side": "SELL",
+   "qty": 0.0001159,
+   "price": 84410.25,
+   "cost": 0.014675,
+   "reason": "сигнал на выход"
+  },
+  {
+   "time": "2026-09-27 23:00",
+   "ticker": "BTCUSDT",
+   "side": "BUY",
+   "qty": 0.00011511,
+   "price": 84737.38,
+   "cost": 0.014631,
+   "reason": "сигнал на покупку"
+  },
+  {
+   "time": "2026-09-28 11:00",
+   "ticker": "BTCUSDT",
+   "side": "SELL",
+   "qty": 0.00011511,
+   "price": 82924.02,
+   "cost": 0.014318,
+   "reason": "сигнал на выход"
+  },
+  {
+   "time": "2026-10-01 10:00",
+   "ticker": "BTCUSDT",
+   "side": "BUY",
+   "qty": 0.00011312,
+   "price": 84130.01,
+   "cost": 0.014275,
+   "reason": "сигнал на покупку"
+  },
+  {
+   "time": "2026-10-01 16:00",
+   "ticker": "BTCUSDT",
+   "side": "SELL",
+   "qty": 0.00011312,
+   "price": 83736.02,
+   "cost": 0.014208,
+   "reason": "сигнал на выход"
+  },
+  {
+   "time": "2026-10-02 01:13",
+   "ticker": "BTCUSDT",
+   "side": "BUY",
+   "qty": 0.00011142,
+   "price": 84761.98,
+   "cost": 0.014166,
+   "reason": "сигнал на покупку"
+  },
+  {
+   "time": "2026-10-07 12:00",
+   "ticker": "BTCUSDT",
+   "side": "SELL",
+   "qty": 0.00011142,
+   "price": 83974.0,
+   "cost": 0.014035,
+   "reason": "сигнал на выход"
+  }
+ ],
+ "withdrawals": [
+  {
+   "t": "2026-09-21 18:45",
+   "amount": 0.55,
+   "equity_before": 10.56
+  }
+ ],
+ "events": [
+  {
+   "t": "2026-10-10 05:47",
+   "kind": "comment",
+   "text": "BTC 82,616.7 $ (-0,02% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 05:52",
+   "kind": "comment",
+   "text": "BTC 82,644 $ (+0,01% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 05:57",
+   "kind": "comment",
+   "text": "BTC 82,630 $ (-0,01% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 06:02",
+   "kind": "comment",
+   "text": "BTC 82,614.5 $ (-0,03% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 06:07",
+   "kind": "comment",
+   "text": "BTC 82,600 $ (-0,04% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 06:12",
+   "kind": "comment",
+   "text": "BTC 82,600 $ (-0,04% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 06:17",
+   "kind": "comment",
+   "text": "BTC 82,580 $ (-0,07% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 06:22",
+   "kind": "comment",
+   "text": "BTC 82,580 $ (-0,07% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 06:27",
+   "kind": "comment",
+   "text": "BTC 82,589.2 $ (-0,06% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 06:32",
+   "kind": "comment",
+   "text": "BTC 82,589.2 $ (-0,06% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 06:37",
+   "kind": "comment",
+   "text": "BTC 82,560 $ (-0,09% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 06:42",
+   "kind": "comment",
+   "text": "BTC 82,562.4 $ (-0,09% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 06:48",
+   "kind": "comment",
+   "text": "BTC 82,594 $ (-0,05% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 06:53",
+   "kind": "comment",
+   "text": "BTC 82,580 $ (-0,07% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 06:58",
+   "kind": "comment",
+   "text": "BTC 82,590 $ (-0,06% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 07:03",
+   "kind": "comment",
+   "text": "BTC 82,684 $ (+0,06% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 07:09",
+   "kind": "comment",
+   "text": "BTC 82,716 $ (+0,10% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 07:14",
+   "kind": "comment",
+   "text": "BTC 82,710 $ (+0,09% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 07:19",
+   "kind": "comment",
+   "text": "BTC 82,685.2 $ (+0,06% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 07:24",
+   "kind": "comment",
+   "text": "BTC 82,659 $ (+0,03% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 07:29",
+   "kind": "comment",
+   "text": "BTC 82,660 $ (+0,03% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 07:34",
+   "kind": "comment",
+   "text": "BTC 82,650 $ (+0,02% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 07:39",
+   "kind": "comment",
+   "text": "BTC 82,660 $ (+0,03% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 07:44",
+   "kind": "comment",
+   "text": "BTC 82,676 $ (+0,05% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 07:49",
+   "kind": "comment",
+   "text": "BTC 82,668.4 $ (+0,04% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 07:54",
+   "kind": "comment",
+   "text": "BTC 82,706.8 $ (+0,09% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 07:59",
+   "kind": "comment",
+   "text": "BTC 82,686.9 $ (+0,06% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 08:05",
+   "kind": "comment",
+   "text": "BTC 82,674.6 $ (+0,05% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 08:10",
+   "kind": "comment",
+   "text": "BTC 82,683.5 $ (+0,06% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 08:15",
+   "kind": "comment",
+   "text": "BTC 82,703.3 $ (+0,08% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 08:20",
+   "kind": "comment",
+   "text": "BTC 82,684 $ (+0,06% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 08:25",
+   "kind": "comment",
+   "text": "BTC 82,694 $ (+0,07% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 08:30",
+   "kind": "comment",
+   "text": "BTC 82,668.6 $ (+0,04% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 08:35",
+   "kind": "comment",
+   "text": "BTC 82,715 $ (+0,10% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 08:40",
+   "kind": "comment",
+   "text": "BTC 82,783.4 $ (+0,18% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 08:45",
+   "kind": "comment",
+   "text": "BTC 82,775.1 $ (+0,17% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 08:50",
+   "kind": "comment",
+   "text": "BTC 82,779 $ (+0,17% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 08:55",
+   "kind": "comment",
+   "text": "BTC 82,779 $ (+0,17% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 09:00",
+   "kind": "comment",
+   "text": "BTC 82,842 $ (+0,25% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 09:05",
+   "kind": "comment",
+   "text": "BTC 82,770 $ (+0,16% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 09:10",
+   "kind": "comment",
+   "text": "BTC 82,787.3 $ (+0,18% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 09:15",
+   "kind": "comment",
+   "text": "BTC 82,766.1 $ (+0,16% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 09:20",
+   "kind": "comment",
+   "text": "BTC 82,774.9 $ (+0,17% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 09:25",
+   "kind": "comment",
+   "text": "BTC 82,785.1 $ (+0,18% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 09:31",
+   "kind": "comment",
+   "text": "BTC 82,772.3 $ (+0,17% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 09:36",
+   "kind": "comment",
+   "text": "BTC 82,780.1 $ (+0,17% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 09:41",
+   "kind": "comment",
+   "text": "BTC 82,793.2 $ (+0,19% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 09:46",
+   "kind": "comment",
+   "text": "BTC 82,838 $ (+0,25% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 09:51",
+   "kind": "comment",
+   "text": "BTC 82,806 $ (+0,21% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 09:56",
+   "kind": "comment",
+   "text": "BTC 82,783.1 $ (+0,18% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 10:01",
+   "kind": "comment",
+   "text": "BTC 82,756 $ (+0,15% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 10:06",
+   "kind": "comment",
+   "text": "BTC 82,714.8 $ (+0,10% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 10:11",
+   "kind": "comment",
+   "text": "BTC 82,667.9 $ (+0,04% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 10:16",
+   "kind": "comment",
+   "text": "BTC 82,664 $ (+0,03% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 10:21",
+   "kind": "comment",
+   "text": "BTC 82,640.3 $ (+0,01% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 10:26",
+   "kind": "comment",
+   "text": "BTC 82,640.3 $ (+0,01% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 10:31",
+   "kind": "comment",
+   "text": "BTC 82,640 $ (+0,01% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 10:36",
+   "kind": "comment",
+   "text": "BTC 82,742 $ (+0,13% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 10:41",
+   "kind": "comment",
+   "text": "BTC 82,754.6 $ (+0,14% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 10:46",
+   "kind": "comment",
+   "text": "BTC 82,743.9 $ (+0,13% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 10:51",
+   "kind": "comment",
+   "text": "BTC 82,777.3 $ (+0,17% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 10:56",
+   "kind": "comment",
+   "text": "BTC 82,792 $ (+0,19% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 11:01",
+   "kind": "comment",
+   "text": "BTC 82,806 $ (+0,21% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 11:06",
+   "kind": "comment",
+   "text": "BTC 82,837.8 $ (+0,24% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 11:11",
+   "kind": "comment",
+   "text": "BTC 82,822.4 $ (+0,23% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 11:16",
+   "kind": "comment",
+   "text": "BTC 82,840 $ (+0,25% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 11:21",
+   "kind": "comment",
+   "text": "BTC 82,843.4 $ (+0,25% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 11:26",
+   "kind": "comment",
+   "text": "BTC 82,826 $ (+0,23% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 11:31",
+   "kind": "comment",
+   "text": "BTC 82,827.4 $ (+0,23% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 11:36",
+   "kind": "comment",
+   "text": "BTC 82,829.8 $ (+0,24% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 11:41",
+   "kind": "comment",
+   "text": "BTC 82,808.9 $ (+0,21% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 11:46",
+   "kind": "comment",
+   "text": "BTC 82,782 $ (+0,18% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 11:51",
+   "kind": "comment",
+   "text": "BTC 82,824.7 $ (+0,23% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 11:57",
+   "kind": "comment",
+   "text": "BTC 82,848 $ (+0,26% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 12:00",
+   "kind": "summary",
+   "text": "Крипто: BTC 24/7: капитал 9,34 $ · за день +0,00% · с начала -1,08% (выведено 0,55 $) · сделок сегодня 0 · рекомендация: вывод не нужен: прибыль сверх тела меньше 5%"
+  },
+  {
+   "t": "2026-10-10 12:02",
+   "kind": "comment",
+   "text": "BTC 82,858.5 $ (+0,27% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 12:07",
+   "kind": "comment",
+   "text": "BTC 82,861.3 $ (+0,27% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 12:12",
+   "kind": "comment",
+   "text": "BTC 82,947 $ (+0,38% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 12:17",
+   "kind": "comment",
+   "text": "BTC 82,888.2 $ (+0,31% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 12:22",
+   "kind": "comment",
+   "text": "BTC 82,904.2 $ (+0,33% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 12:27",
+   "kind": "comment",
+   "text": "BTC 82,883.4 $ (+0,30% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 12:32",
+   "kind": "comment",
+   "text": "BTC 82,912.7 $ (+0,34% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 12:37",
+   "kind": "comment",
+   "text": "BTC 82,922 $ (+0,35% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 12:42",
+   "kind": "comment",
+   "text": "BTC 82,901.1 $ (+0,32% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 12:47",
+   "kind": "comment",
+   "text": "BTC 82,869.3 $ (+0,28% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 14:43",
+   "kind": "comment",
+   "text": "BTC 82,885.9 $ (+0,30% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 14:48",
+   "kind": "comment",
+   "text": "BTC 82,888 $ (+0,31% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 14:53",
+   "kind": "comment",
+   "text": "BTC 82,888 $ (+0,31% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 14:58",
+   "kind": "comment",
+   "text": "BTC 82,879.7 $ (+0,30% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 15:00",
+   "kind": "summary",
+   "text": "Крипто: BTC 24/7: капитал 9,34 $ · за день +0,00% · с начала -1,08% (выведено 0,55 $) · сделок сегодня 0 · рекомендация: вывод не нужен: прибыль сверх тела меньше 5%"
+  },
+  {
+   "t": "2026-10-10 15:03",
+   "kind": "comment",
+   "text": "BTC 82,861.3 $ (+0,27% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 15:08",
+   "kind": "comment",
+   "text": "BTC 82,859 $ (+0,27% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 15:13",
+   "kind": "comment",
+   "text": "BTC 82,873 $ (+0,29% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 15:18",
+   "kind": "comment",
+   "text": "BTC 82,870 $ (+0,28% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 15:23",
+   "kind": "comment",
+   "text": "BTC 82,864.5 $ (+0,28% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 15:28",
+   "kind": "comment",
+   "text": "BTC 82,838 $ (+0,24% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 15:33",
+   "kind": "comment",
+   "text": "BTC 82,859.3 $ (+0,27% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 15:38",
+   "kind": "comment",
+   "text": "BTC 82,828.7 $ (+0,23% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 15:43",
+   "kind": "comment",
+   "text": "BTC 82,854 $ (+0,26% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 15:48",
+   "kind": "comment",
+   "text": "BTC 82,822 $ (+0,23% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 15:54",
+   "kind": "comment",
+   "text": "BTC 82,818 $ (+0,22% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 15:59",
+   "kind": "comment",
+   "text": "BTC 82,808 $ (+0,21% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 16:04",
+   "kind": "comment",
+   "text": "BTC 82,829.3 $ (+0,23% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 16:09",
+   "kind": "comment",
+   "text": "BTC 82,821.8 $ (+0,23% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 16:14",
+   "kind": "comment",
+   "text": "BTC 82,824.1 $ (+0,23% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 16:19",
+   "kind": "comment",
+   "text": "BTC 82,850 $ (+0,26% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 16:24",
+   "kind": "comment",
+   "text": "BTC 82,860 $ (+0,27% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 16:29",
+   "kind": "comment",
+   "text": "BTC 82,858 $ (+0,27% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 16:34",
+   "kind": "comment",
+   "text": "BTC 82,857.6 $ (+0,27% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 16:39",
+   "kind": "comment",
+   "text": "BTC 82,826 $ (+0,23% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 16:44",
+   "kind": "comment",
+   "text": "BTC 82,788.1 $ (+0,18% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 16:49",
+   "kind": "comment",
+   "text": "BTC 82,824 $ (+0,23% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 16:54",
+   "kind": "comment",
+   "text": "BTC 82,820 $ (+0,22% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 17:00",
+   "kind": "comment",
+   "text": "BTC 82,830.3 $ (+0,24% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 17:05",
+   "kind": "comment",
+   "text": "BTC 82,778 $ (+0,17% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 17:10",
+   "kind": "comment",
+   "text": "BTC 82,780 $ (+0,17% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 17:15",
+   "kind": "comment",
+   "text": "BTC 82,791.2 $ (+0,19% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 17:20",
+   "kind": "comment",
+   "text": "BTC 82,808 $ (+0,21% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 17:25",
+   "kind": "comment",
+   "text": "BTC 82,828.6 $ (+0,23% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 17:30",
+   "kind": "comment",
+   "text": "BTC 82,942 $ (+0,37% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 17:35",
+   "kind": "comment",
+   "text": "BTC 82,954 $ (+0,39% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 17:40",
+   "kind": "comment",
+   "text": "BTC 83,060 $ (+0,51% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 17:45",
+   "kind": "comment",
+   "text": "BTC 83,034 $ (+0,48% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 17:50",
+   "kind": "comment",
+   "text": "BTC 82,979.5 $ (+0,42% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 17:56",
+   "kind": "comment",
+   "text": "BTC 83,000 $ (+0,44% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 18:01",
+   "kind": "comment",
+   "text": "BTC 83,000.9 $ (+0,44% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 18:06",
+   "kind": "comment",
+   "text": "BTC 83,040 $ (+0,49% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 18:11",
+   "kind": "comment",
+   "text": "BTC 83,012 $ (+0,46% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 18:16",
+   "kind": "comment",
+   "text": "BTC 82,958 $ (+0,39% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 18:22",
+   "kind": "comment",
+   "text": "BTC 82,953.6 $ (+0,38% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 18:27",
+   "kind": "comment",
+   "text": "BTC 82,980.6 $ (+0,42% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 18:32",
+   "kind": "comment",
+   "text": "BTC 83,028 $ (+0,47% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 18:37",
+   "kind": "comment",
+   "text": "BTC 83,030 $ (+0,48% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 18:42",
+   "kind": "comment",
+   "text": "BTC 83,033.2 $ (+0,48% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 18:45",
+   "kind": "summary",
+   "text": "Крипто: BTC 24/7: капитал 9,34 $ · за день +0,00% · с начала -1,08% (выведено 0,55 $) · сделок сегодня 0 · рекомендация: вывод не нужен: прибыль сверх тела меньше 5%"
+  },
+  {
+   "t": "2026-10-10 18:47",
+   "kind": "comment",
+   "text": "BTC 83,047.3 $ (+0,50% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 18:52",
+   "kind": "comment",
+   "text": "BTC 83,056.2 $ (+0,51% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 18:57",
+   "kind": "comment",
+   "text": "BTC 82,994 $ (+0,43% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 19:03",
+   "kind": "comment",
+   "text": "BTC 83,037.2 $ (+0,49% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 19:08",
+   "kind": "comment",
+   "text": "BTC 82,978.1 $ (+0,41% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 19:13",
+   "kind": "comment",
+   "text": "BTC 83,038 $ (+0,49% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 19:18",
+   "kind": "comment",
+   "text": "BTC 83,068.4 $ (+0,52% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 19:23",
+   "kind": "comment",
+   "text": "BTC 83,038 $ (+0,49% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 19:28",
+   "kind": "comment",
+   "text": "BTC 83,001.3 $ (+0,44% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 19:33",
+   "kind": "comment",
+   "text": "BTC 83,020 $ (+0,47% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 19:38",
+   "kind": "comment",
+   "text": "BTC 83,046 $ (+0,50% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 19:43",
+   "kind": "comment",
+   "text": "BTC 83,072.5 $ (+0,53% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 19:48",
+   "kind": "comment",
+   "text": "BTC 83,045.6 $ (+0,50% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 19:53",
+   "kind": "comment",
+   "text": "BTC 83,050 $ (+0,50% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 19:58",
+   "kind": "comment",
+   "text": "BTC 82,994 $ (+0,43% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 20:03",
+   "kind": "comment",
+   "text": "BTC 83,070 $ (+0,53% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 20:08",
+   "kind": "comment",
+   "text": "BTC 83,064 $ (+0,52% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 20:13",
+   "kind": "comment",
+   "text": "BTC 83,058 $ (+0,51% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 20:18",
+   "kind": "comment",
+   "text": "BTC 83,063.2 $ (+0,52% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 20:23",
+   "kind": "comment",
+   "text": "BTC 83,034.6 $ (+0,48% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 20:28",
+   "kind": "comment",
+   "text": "BTC 83,062 $ (+0,52% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 20:34",
+   "kind": "comment",
+   "text": "BTC 83,063.1 $ (+0,52% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 20:39",
+   "kind": "comment",
+   "text": "BTC 83,142 $ (+0,61% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 20:44",
+   "kind": "comment",
+   "text": "BTC 83,148 $ (+0,62% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 20:49",
+   "kind": "comment",
+   "text": "BTC 83,173.3 $ (+0,65% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 20:54",
+   "kind": "comment",
+   "text": "BTC 83,151.9 $ (+0,62% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 20:59",
+   "kind": "comment",
+   "text": "BTC 83,118 $ (+0,58% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 21:04",
+   "kind": "comment",
+   "text": "BTC 83,092 $ (+0,55% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 21:09",
+   "kind": "comment",
+   "text": "BTC 83,120 $ (+0,59% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 21:14",
+   "kind": "comment",
+   "text": "BTC 83,063.7 $ (+0,52% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 21:19",
+   "kind": "comment",
+   "text": "BTC 83,074 $ (+0,53% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 21:24",
+   "kind": "comment",
+   "text": "BTC 83,024 $ (+0,47% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 21:29",
+   "kind": "comment",
+   "text": "BTC 83,020 $ (+0,47% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 21:34",
+   "kind": "comment",
+   "text": "BTC 83,040 $ (+0,49% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 21:39",
+   "kind": "comment",
+   "text": "BTC 83,026.5 $ (+0,47% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 21:45",
+   "kind": "comment",
+   "text": "BTC 83,026.2 $ (+0,47% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 21:50",
+   "kind": "comment",
+   "text": "BTC 83,048 $ (+0,50% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 21:55",
+   "kind": "comment",
+   "text": "BTC 83,034 $ (+0,48% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 22:00",
+   "kind": "comment",
+   "text": "BTC 83,034 $ (+0,48% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 22:05",
+   "kind": "comment",
+   "text": "BTC 83,034 $ (+0,48% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 22:10",
+   "kind": "comment",
+   "text": "BTC 83,038.7 $ (+0,49% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 22:15",
+   "kind": "comment",
+   "text": "BTC 83,034 $ (+0,48% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 22:20",
+   "kind": "comment",
+   "text": "BTC 83,034 $ (+0,48% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 22:25",
+   "kind": "comment",
+   "text": "BTC 83,034.1 $ (+0,48% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 22:30",
+   "kind": "comment",
+   "text": "BTC 83,043.6 $ (+0,49% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 22:36",
+   "kind": "comment",
+   "text": "BTC 83,088.9 $ (+0,55% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 22:41",
+   "kind": "comment",
+   "text": "BTC 83,095.9 $ (+0,56% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 22:46",
+   "kind": "comment",
+   "text": "BTC 83,085.1 $ (+0,54% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 22:51",
+   "kind": "comment",
+   "text": "BTC 83,087.1 $ (+0,55% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 22:56",
+   "kind": "comment",
+   "text": "BTC 83,087.1 $ (+0,55% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 23:02",
+   "kind": "comment",
+   "text": "BTC 83,085.4 $ (+0,54% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 23:07",
+   "kind": "comment",
+   "text": "BTC 83,100 $ (+0,56% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 23:12",
+   "kind": "comment",
+   "text": "BTC 83,047 $ (+0,50% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 23:17",
+   "kind": "comment",
+   "text": "BTC 83,038.6 $ (+0,49% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 23:22",
+   "kind": "comment",
+   "text": "BTC 83,054.8 $ (+0,51% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 23:28",
+   "kind": "comment",
+   "text": "BTC 83,077 $ (+0,53% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 23:33",
+   "kind": "comment",
+   "text": "BTC 83,038 $ (+0,49% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 23:38",
+   "kind": "comment",
+   "text": "BTC 83,059.5 $ (+0,51% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 23:43",
+   "kind": "comment",
+   "text": "BTC 83,068 $ (+0,52% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 23:45",
+   "kind": "summary",
+   "text": "Крипто: BTC 24/7: капитал 9,34 $ · за день +0,00% · с начала -1,08% (выведено 0,55 $) · сделок сегодня 0 · рекомендация: вывод не нужен: прибыль сверх тела меньше 5%"
+  },
+  {
+   "t": "2026-10-10 23:48",
+   "kind": "comment",
+   "text": "BTC 83,068.8 $ (+0,52% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 23:54",
+   "kind": "comment",
+   "text": "BTC 83,078 $ (+0,54% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-10 23:59",
+   "kind": "comment",
+   "text": "BTC 83,040 $ (+0,49% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 00:04",
+   "kind": "comment",
+   "text": "BTC 83,057.3 $ (+0,51% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 00:09",
+   "kind": "comment",
+   "text": "BTC 83,050 $ (+0,50% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 00:14",
+   "kind": "comment",
+   "text": "BTC 83,020 $ (+0,47% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 00:19",
+   "kind": "comment",
+   "text": "BTC 83,055.7 $ (+0,51% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 00:24",
+   "kind": "comment",
+   "text": "BTC 83,060 $ (+0,51% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 00:29",
+   "kind": "comment",
+   "text": "BTC 83,049.4 $ (+0,50% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 00:34",
+   "kind": "comment",
+   "text": "BTC 83,078.9 $ (+0,54% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 00:39",
+   "kind": "comment",
+   "text": "BTC 83,078.9 $ (+0,54% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 00:45",
+   "kind": "comment",
+   "text": "BTC 83,079 $ (+0,54% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 00:50",
+   "kind": "comment",
+   "text": "BTC 83,076.9 $ (+0,53% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 00:55",
+   "kind": "comment",
+   "text": "BTC 83,050 $ (+0,50% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 01:00",
+   "kind": "comment",
+   "text": "BTC 83,040 $ (+0,49% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 01:05",
+   "kind": "comment",
+   "text": "BTC 83,049.2 $ (+0,50% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 01:11",
+   "kind": "comment",
+   "text": "BTC 83,030 $ (+0,48% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 01:16",
+   "kind": "comment",
+   "text": "BTC 83,036 $ (+0,48% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 01:21",
+   "kind": "comment",
+   "text": "BTC 82,994 $ (+0,43% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 01:26",
+   "kind": "comment",
+   "text": "BTC 82,999.1 $ (+0,44% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 01:31",
+   "kind": "comment",
+   "text": "BTC 83,040.9 $ (+0,49% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 01:37",
+   "kind": "comment",
+   "text": "BTC 83,068.2 $ (+0,52% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 01:42",
+   "kind": "comment",
+   "text": "BTC 83,062 $ (+0,52% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 01:47",
+   "kind": "comment",
+   "text": "BTC 82,988 $ (+0,43% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 01:52",
+   "kind": "comment",
+   "text": "BTC 83,055 $ (+0,51% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 01:57",
+   "kind": "comment",
+   "text": "BTC 83,086 $ (+0,55% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 02:03",
+   "kind": "comment",
+   "text": "BTC 83,094 $ (+0,55% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 02:08",
+   "kind": "comment",
+   "text": "BTC 83,064 $ (+0,52% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 02:13",
+   "kind": "comment",
+   "text": "BTC 83,064 $ (+0,52% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 02:18",
+   "kind": "comment",
+   "text": "BTC 83,055.4 $ (+0,51% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 02:23",
+   "kind": "comment",
+   "text": "BTC 83,048.3 $ (+0,50% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 02:28",
+   "kind": "comment",
+   "text": "BTC 83,033.1 $ (+0,48% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 02:33",
+   "kind": "comment",
+   "text": "BTC 83,063.6 $ (+0,52% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 02:39",
+   "kind": "comment",
+   "text": "BTC 83,047.4 $ (+0,50% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 02:44",
+   "kind": "comment",
+   "text": "BTC 83,021.6 $ (+0,47% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 02:49",
+   "kind": "comment",
+   "text": "BTC 83,010.5 $ (+0,45% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 02:54",
+   "kind": "comment",
+   "text": "BTC 83,030.6 $ (+0,48% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 02:59",
+   "kind": "comment",
+   "text": "BTC 82,988.4 $ (+0,43% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 03:04",
+   "kind": "comment",
+   "text": "BTC 83,002.7 $ (+0,00% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 03:09",
+   "kind": "comment",
+   "text": "BTC 83,009.9 $ (+0,00% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 03:14",
+   "kind": "comment",
+   "text": "BTC 83,030.2 $ (+0,00% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 03:19",
+   "kind": "comment",
+   "text": "BTC 83,000 $ (+0,00% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 03:25",
+   "kind": "comment",
+   "text": "BTC 82,995 $ (+0,00% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 03:30",
+   "kind": "comment",
+   "text": "BTC 82,977.9 $ (+0,00% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 03:35",
+   "kind": "comment",
+   "text": "BTC 82,990.4 $ (+0,00% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 03:41",
+   "kind": "comment",
+   "text": "BTC 82,986 $ (+0,00% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 03:46",
+   "kind": "comment",
+   "text": "BTC 82,969.2 $ (+0,00% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 03:51",
+   "kind": "comment",
+   "text": "BTC 82,992 $ (+0,00% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 03:56",
+   "kind": "comment",
+   "text": "BTC 82,962 $ (+0,00% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 04:01",
+   "kind": "comment",
+   "text": "BTC 82,966 $ (-0,03% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 04:06",
+   "kind": "comment",
+   "text": "BTC 82,976.8 $ (-0,01% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 04:11",
+   "kind": "comment",
+   "text": "BTC 82,990.1 $ (+0,00% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 04:16",
+   "kind": "comment",
+   "text": "BTC 83,021.2 $ (+0,04% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 04:21",
+   "kind": "comment",
+   "text": "BTC 83,021.6 $ (+0,04% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 04:27",
+   "kind": "comment",
+   "text": "BTC 83,019.9 $ (+0,04% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 04:32",
+   "kind": "comment",
+   "text": "BTC 83,037.4 $ (+0,06% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 04:37",
+   "kind": "comment",
+   "text": "BTC 83,060 $ (+0,09% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 04:42",
+   "kind": "comment",
+   "text": "BTC 83,059.6 $ (+0,09% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 04:47",
+   "kind": "comment",
+   "text": "BTC 83,018.1 $ (+0,04% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 04:52",
+   "kind": "comment",
+   "text": "BTC 83,040.6 $ (+0,06% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 04:57",
+   "kind": "comment",
+   "text": "BTC 83,024 $ (+0,04% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 05:02",
+   "kind": "comment",
+   "text": "BTC 83,014 $ (+0,03% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 05:07",
+   "kind": "comment",
+   "text": "BTC 83,041.6 $ (+0,06% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 05:12",
+   "kind": "comment",
+   "text": "BTC 83,053.4 $ (+0,08% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 05:17",
+   "kind": "comment",
+   "text": "BTC 83,053.4 $ (+0,08% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 05:22",
+   "kind": "comment",
+   "text": "BTC 83,050.7 $ (+0,08% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 05:28",
+   "kind": "comment",
+   "text": "BTC 83,056.8 $ (+0,08% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 05:33",
+   "kind": "comment",
+   "text": "BTC 83,070.6 $ (+0,10% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 05:38",
+   "kind": "comment",
+   "text": "BTC 83,085 $ (+0,12% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 05:44",
+   "kind": "comment",
+   "text": "BTC 83,150 $ (+0,19% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 05:49",
+   "kind": "comment",
+   "text": "BTC 83,111.1 $ (+0,15% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 05:54",
+   "kind": "comment",
+   "text": "BTC 83,110.1 $ (+0,15% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 06:00",
+   "kind": "comment",
+   "text": "BTC 83,097.4 $ (+0,13% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 06:05",
+   "kind": "comment",
+   "text": "BTC 83,065.9 $ (+0,09% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 06:10",
+   "kind": "comment",
+   "text": "BTC 83,017.4 $ (+0,04% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 06:15",
+   "kind": "comment",
+   "text": "BTC 82,976.8 $ (-0,01% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 06:20",
+   "kind": "comment",
+   "text": "BTC 82,944.2 $ (-0,05% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 06:25",
+   "kind": "comment",
+   "text": "BTC 82,920.6 $ (-0,08% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 06:30",
+   "kind": "comment",
+   "text": "BTC 82,926 $ (-0,08% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 06:35",
+   "kind": "comment",
+   "text": "BTC 82,995.9 $ (+0,01% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 06:40",
+   "kind": "comment",
+   "text": "BTC 82,983.8 $ (-0,01% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 06:45",
+   "kind": "comment",
+   "text": "BTC 82,982 $ (-0,01% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 06:50",
+   "kind": "comment",
+   "text": "BTC 82,907.1 $ (-0,10% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 06:55",
+   "kind": "comment",
+   "text": "BTC 82,860 $ (-0,15% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 07:01",
+   "kind": "comment",
+   "text": "BTC 82,806.8 $ (-0,22% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 07:06",
+   "kind": "comment",
+   "text": "BTC 82,872 $ (-0,14% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 07:11",
+   "kind": "comment",
+   "text": "BTC 82,868 $ (-0,15% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 07:17",
+   "kind": "comment",
+   "text": "BTC 82,880 $ (-0,13% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 07:22",
+   "kind": "comment",
+   "text": "BTC 82,886 $ (-0,12% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 07:27",
+   "kind": "comment",
+   "text": "BTC 82,904 $ (-0,10% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 07:32",
+   "kind": "comment",
+   "text": "BTC 82,956 $ (-0,04% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 07:37",
+   "kind": "comment",
+   "text": "BTC 82,988.6 $ (+0,00% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 07:42",
+   "kind": "comment",
+   "text": "BTC 82,995.2 $ (+0,01% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 07:47",
+   "kind": "comment",
+   "text": "BTC 83,004 $ (+0,02% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 07:52",
+   "kind": "comment",
+   "text": "BTC 83,012.5 $ (+0,03% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 07:57",
+   "kind": "comment",
+   "text": "BTC 83,028.2 $ (+0,05% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 08:02",
+   "kind": "comment",
+   "text": "BTC 83,036.3 $ (+0,06% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 08:07",
+   "kind": "comment",
+   "text": "BTC 83,060 $ (+0,09% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 08:12",
+   "kind": "comment",
+   "text": "BTC 83,044.5 $ (+0,07% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 08:17",
+   "kind": "comment",
+   "text": "BTC 83,065.6 $ (+0,09% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 08:22",
+   "kind": "comment",
+   "text": "BTC 83,078.4 $ (+0,11% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 08:27",
+   "kind": "comment",
+   "text": "BTC 83,085.1 $ (+0,12% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 08:32",
+   "kind": "comment",
+   "text": "BTC 83,090 $ (+0,12% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 08:37",
+   "kind": "comment",
+   "text": "BTC 83,075.6 $ (+0,11% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  },
+  {
+   "t": "2026-10-11 08:42",
+   "kind": "comment",
+   "text": "BTC 83,074 $ (+0,10% за сутки UTC) · в USDT · капитал 9,34 $ (+0,00% за день)"
+  }
+ ],
+ "risk": {
+  "peak": 9.985023002,
+  "withdraw_mark": 9.985023002,
+  "cooldown_left": 0,
+  "withdrawn_total": 0.0
+ },
+ "last_withdraw_period": "2026-Q3",
+ "kind": "crypto",
+ "body": 10.0,
+ "day": "2026-10-11",
+ "day_start_equity": 9.34202589,
+ "day_trades": 0,
+ "day_stopped": false,
+ "last_comment": "2026-10-11 08:42",
+ "currency": "USDT"
+}

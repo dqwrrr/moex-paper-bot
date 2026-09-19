@@ -1,0 +1,14 @@
+{
+ "updated": "2026-10-11 08:45",
+ "ok": false,
+ "errors": [
+  {
+   "portfolio": "active",
+   "error": "IssError: Нет цены для TMON"
+  },
+  {
+   "portfolio": "defensive",
+   "error": "IssError: Нет цены для TMON"
+  }
+ ]
+}
