@@ -1,0 +1,14 @@
+{
+ "updated": "2026-09-27 00:08",
+ "ok": false,
+ "errors": [
+  {
+   "portfolio": "active",
+   "error": "IssError: Нет цены для TMOS"
+  },
+  {
+   "portfolio": "defensive",
+   "error": "IssError: Нет цены для TMOS"
+  }
+ ]
+}
