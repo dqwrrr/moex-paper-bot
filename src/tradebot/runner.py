@@ -21,11 +21,12 @@ from zoneinfo import ZoneInfo
 
 import pandas as pd
 
+from . import crypto as C
 from . import intraday as I
 from . import iss, livedata, notify
 from . import strategies as S
 from .data import DATA_DIR, Market, load_market
-from .paper import INSTRUMENTS, Portfolio, resolve
+from .paper import INSTRUMENTS, Portfolio, crypto_switch, resolve
 from .risk import RiskRules
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -59,6 +60,7 @@ class Ctx:
     bars: pd.DataFrame | None = None
     bars_at: datetime | None = None
     market: Market | None = None
+    crypto_bars: dict = field(default_factory=dict)   # symbol -> (время загрузки, свечи)
     new_events: list[tuple[str, dict]] = field(default_factory=list)
 
 
@@ -116,8 +118,9 @@ def fetch_prices(tickers: set[str]) -> tuple[dict[str, float], dict[str, int], b
     return prices, lots, live
 
 
-def rub(x: float) -> str:
-    return f"{x:,.2f}".replace(",", " ").replace(".", ",") + " ₽"
+def rub(x: float, cur: str = "RUB") -> str:
+    sign = {"RUB": " ₽", "USDT": " $"}.get(cur, " " + cur)
+    return f"{x:,.2f}".replace(",", " ").replace(".", ",") + sign
 
 
 def pct(x: float) -> str:
@@ -126,9 +129,11 @@ def pct(x: float) -> str:
 
 def new_portfolio(pc: dict, strategy_name: str, rules: RiskRules, now: datetime) -> Portfolio:
     cap = float(pc["capital"])
+    kind = pc.get("kind", "daily")
     return Portfolio(pc["id"], pc["title"], strategy_name, cap, cap,
                      last_withdraw_period=period_key(pd.Timestamp(now.date()), rules.withdraw_freq),
-                     kind=pc.get("kind", "daily"), body=float(pc.get("body", cap)))
+                     kind=kind, body=float(pc.get("body", cap)),
+                     currency="USDT" if kind == "crypto" else "RUB")
 
 
 def emit(ctx: Ctx, p: Portfolio, stamp: str, text: str, kind: str) -> None:
@@ -223,6 +228,58 @@ def step_intraday(p: Portfolio, pc: dict, now: datetime, stamp: str, ctx: Ctx) -
         p.last_comment = now.strftime("%Y-%m-%d %H:%M")
 
 
+# ---------------- крипто-портфель (24/7) ----------------
+def get_crypto_bars(ctx: Ctx, symbol: str, now: datetime) -> pd.DataFrame:
+    cached = ctx.crypto_bars.get(symbol)
+    if cached is None or now - cached[0] >= BARS_REFRESH:
+        start = pd.Timestamp.now("UTC").tz_localize(None) - pd.Timedelta(days=30)
+        ctx.crypto_bars[symbol] = (now, C.klines(symbol, start))
+    bars = ctx.crypto_bars[symbol][1]
+    utc_now = pd.Timestamp.now("UTC").tz_localize(None)
+    return bars[bars.index + pd.Timedelta(hours=1) <= utc_now]          # только закрытые свечи
+
+
+def step_crypto(p: Portfolio, pc: dict, now: datetime, stamp: str, ctx: Ctx) -> dict[str, float]:
+    sym = pc["symbol"]
+    strat = C.FACTORIES[pc["strategy"]](pc.get("params", {}))
+    price = C.last_price(sym)
+    prices = {sym: price}
+    eq = p.equity(prices)
+    today = now.date().isoformat()
+    if p.day != today:
+        p.day, p.day_start_equity, p.day_trades, p.day_stopped = today, eq, 0, False
+    bars = get_crypto_bars(ctx, sym, now)
+    want = bool(len(bars)) and float(strat.positions(bars).iloc[-1]) > 0.5
+    limit = float(pc.get("daily_loss_limit", 0.05))
+    if p.day_start_equity and eq < p.day_start_equity * (1 - limit) and not p.day_stopped:
+        p.day_stopped = True
+        emit(ctx, p, stamp, f"Дневной лимит убытка {limit:.0%} достигнут — до конца дня в USDT.", "risk")
+    if p.day_stopped:
+        want = False
+    why = "сигнал на покупку" if want else "сигнал на выход"
+    tr = crypto_switch(p, sym, want, price, C.FEE, stamp, why)
+    if tr:
+        p.day_trades += 1
+        emit(ctx, p, stamp, f"{'Купил' if tr.side == 'BUY' else 'Продал'} {tr.qty:.6g} {sym[:-4]} по "
+                            f"{price:,.4g} $ ({why})", "trade")
+    every = timedelta(minutes=int(pc.get("comment_every_min", 5)))
+    last = datetime.fromisoformat(p.last_comment).replace(tzinfo=MSK) if p.last_comment else None
+    if last is None or now - last >= every:
+        eq = p.equity(prices)
+        day_bars = bars[bars.index >= utc_day_start(now)]
+        chg = price / day_bars["open"].iloc[0] - 1 if len(day_bars) else 0.0
+        state = f"в {sym[:-4]}" if p.positions.get(sym) else "в USDT"
+        dpl = eq / p.day_start_equity - 1 if p.day_start_equity else 0.0
+        p.log(stamp, f"{sym[:-4]} {price:,.6g} $ ({pct(chg)} за сутки UTC) · {state} · капитал "
+                     f"{rub(eq, p.currency)} ({pct(dpl)} за день)", "comment")
+        p.last_comment = now.strftime("%Y-%m-%d %H:%M")
+    return prices
+
+
+def utc_day_start(now: datetime) -> pd.Timestamp:
+    return pd.Timestamp(now.astimezone(ZoneInfo("UTC")).date())
+
+
 # ---------------- общий шаг ----------------
 def step(cfg: dict, state_dir: Path, now: datetime | None = None, update_data: bool = True,
          ctx: Ctx | None = None) -> dict:
@@ -238,8 +295,22 @@ def step(cfg: dict, state_dir: Path, now: datetime | None = None, update_data: b
     for pc in cfg["portfolio"]:
         path = state_dir / f"{pc['id']}.json"
         kind = pc.get("kind", "daily")
-        name = (INTRADAY_FACTORIES if kind == "intraday" else FACTORIES)[pc["strategy"]](pc.get("params", {})).name
+        fac = {"intraday": INTRADAY_FACTORIES, "crypto": C.FACTORIES}.get(kind, FACTORIES)
+        name = fac[pc["strategy"]](pc.get("params", {})).name
         p = Portfolio.load(path) if path.exists() else new_portfolio(pc, name, rules, now)
+        if kind == "crypto":
+            try:
+                prices = step_crypto(p, pc, now, stamp, ctx)
+            except C.CryptoDataError as e:
+                log.warning("%s: %s", p.id, e)
+                last_px = p.history[-1]["tmos"] if p.history else 0.0
+                blocks.append(site_block(p, {pc["symbol"]: last_px}, pc))
+                p.save(path)
+                continue
+            record_history(p, prices, True, now, pc["symbol"])
+            p.save(path)
+            blocks.append(site_block(p, prices, pc))
+            continue
         try:
             if kind == "intraday":
                 step_intraday(p, pc, now, stamp, ctx)
@@ -254,14 +325,15 @@ def step(cfg: dict, state_dir: Path, now: datetime | None = None, update_data: b
     return write_site(state_dir, blocks, cfg, stamp, last_day)
 
 
-def record_history(p: Portfolio, prices: dict[str, float], live: bool, now: datetime) -> None:
+def record_history(p: Portfolio, prices: dict[str, float], live: bool, now: datetime,
+                   bench_ticker: str = "TMOS") -> None:
     eq = p.equity(prices)
     if p.history and now - datetime.strptime(p.history[-1]["t"], "%Y-%m-%d %H:%M").replace(tzinfo=MSK) \
             < HISTORY_EVERY:
         return
     if not p.risk:
         p.risk = {"peak": eq, "withdraw_mark": eq, "cooldown_left": 0, "withdrawn_total": 0.0}
-    tmos = prices["TMOS"]
+    tmos = prices[bench_ticker]
     bench0 = p.history[0]["tmos"] if p.history else tmos
     p.history.append({"t": now.strftime("%Y-%m-%d %H:%M"), "equity": round(eq, 2), "withdrawn": p.withdrawn(),
                       "tmos": tmos, "bench": round(p.start_capital * tmos / bench0, 2), "live": live})
@@ -295,7 +367,9 @@ def site_block(p: Portfolio, prices: dict[str, float], pc: dict) -> dict:
     names = {v["ticker"]: v["name"] for v in INSTRUMENTS.values()}
     pos = [{"ticker": t, "name": names.get(t, t), "qty": q, "price": prices[t],
             "value": round(q * prices[t], 2), "weight": q * prices[t] / eq} for t, q in p.positions.items()]
-    return {"id": p.id, "title": p.title, "kind": p.kind, "note": pc.get("note", ""), "strategy": p.strategy,
+    return {"id": p.id, "title": p.title, "kind": p.kind, "currency": p.currency,
+            "bench_name": pc.get("symbol", "TMOS")[:-4] if p.kind == "crypto" else "TMOS",
+            "note": pc.get("note", ""), "strategy": p.strategy,
             "start_capital": p.start_capital, "body": p.body, "equity": round(eq, 2), "cash_rub": p.cash_rub,
             "withdrawn": p.withdrawn(), "total": round(eq + p.withdrawn(), 2),
             "pnl_pct": (eq + p.withdrawn()) / p.start_capital - 1,
@@ -314,16 +388,24 @@ def summarize(cfg: dict, state_dir: Path, now: datetime, ctx: Ctx) -> str:
         if not path.exists():
             continue
         p = Portfolio.load(path)
-        prices, lots, _ = fetch_prices({"TMOS", "TMON"} | set(p.positions))
+        if p.kind == "crypto":
+            prices, lots = {pc["symbol"]: C.last_price(pc["symbol"])}, {}
+        else:
+            prices, lots, _ = fetch_prices({"TMOS", "TMON"} | set(p.positions))
         eq = p.equity(prices)
         rec = "продолжать без изменений"
-        if p.kind == "intraday":
+        if p.kind in ("intraday", "crypto"):
             min_profit = float(pc.get("withdraw_min_profit", 0.02))
             if p.body and eq >= p.body * (1 + min_profit):
-                amount = p._raise_cash(math.floor((eq - p.body) * 100) / 100, prices, lots, stamp)
+                want_out = math.floor((eq - p.body) * 100) / 100
+                if p.kind == "crypto":
+                    amount = crypto_withdraw(p, pc["symbol"], want_out, prices[pc["symbol"]], stamp)
+                else:
+                    amount = p._raise_cash(want_out, prices, lots, stamp)
                 if amount > 0:
                     p.withdrawals.append({"t": stamp, "amount": amount, "equity_before": round(eq, 2)})
-                    rec = f"вывести прибыль {rub(amount)}, торговать дальше с телом {rub(p.body)}"
+                    rec = (f"вывести прибыль {rub(amount, p.currency)}, торговать дальше с телом "
+                           f"{rub(p.body, p.currency)}")
                     emit(ctx, p, stamp, f"РЕКОМЕНДАЦИЯ: {rec}. В бумажном режиме вывод выполнен.", "withdraw")
                     eq = p.equity(prices)
             elif p.day_stopped:
@@ -334,16 +416,35 @@ def summarize(cfg: dict, state_dir: Path, now: datetime, ctx: Ctx) -> str:
             rec = "ждёт исполнения заявки при открытии рынка"
         day = f" · за день {pct(eq / p.day_start_equity - 1)}" if p.day_start_equity else ""
         total = (eq + p.withdrawn()) / p.start_capital - 1
-        text = (f"{p.title}: капитал {rub(eq)}{day} · с начала {pct(total)} (выведено {rub(p.withdrawn())})"
-                f" · сделок сегодня {p.day_trades if p.kind == 'intraday' else '—'} · рекомендация: {rec}")
+        text = (f"{p.title}: капитал {rub(eq, p.currency)}{day} · с начала {pct(total)} "
+                f"(выведено {rub(p.withdrawn(), p.currency)})"
+                f" · сделок сегодня {p.day_trades if p.kind != 'daily' else '—'} · рекомендация: {rec}")
         p.log(stamp, text, "summary")
         p.save(path)
         lines.append("• " + text)
     return "\n".join(lines)
 
 
+def crypto_withdraw(p: Portfolio, symbol: str, amount: float, price: float, stamp: str) -> float:
+    """Вывод прибыли из крипто-портфеля: при нехватке USDT продаётся часть монеты."""
+    need = amount - p.cash_rub
+    if need > 0 and p.positions.get(symbol):
+        qty = min(p.positions[symbol], round(need / (price * (1 - C.FEE)) + 1e-8, 8))
+        gross = qty * price
+        p.cash_rub += gross - gross * C.FEE
+        p.positions[symbol] = round(p.positions[symbol] - qty, 8)
+        if p.positions[symbol] <= 0:
+            del p.positions[symbol]
+        p.trades.append({"time": stamp, "ticker": symbol, "side": "SELL", "qty": qty, "price": price,
+                         "cost": round(gross * C.FEE, 6), "reason": "вывод прибыли"})
+    amount = round(min(amount, p.cash_rub), 2)
+    p.cash_rub = round(p.cash_rub - amount, 8)
+    return amount
+
+
 def session_end(now: datetime) -> datetime:
-    return min(now + timedelta(minutes=350), now.replace(hour=23, minute=55, second=0, microsecond=0))
+    """Сессия длится ~5 ч 50 мин (лимит задачи GitHub Actions — 6 ч); запуски — каждые 6 часов."""
+    return now + timedelta(minutes=350)
 
 
 def session(cfg: dict, state_dir: Path, every: int, publish_every: int, publish_cmd: str | None,
@@ -387,7 +488,7 @@ def session(cfg: dict, state_dir: Path, every: int, publish_every: int, publish_
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["tick", "session", "update-data", "update-intraday"])
+    ap.add_argument("cmd", choices=["tick", "session", "update-data", "update-intraday", "update-crypto"])
     ap.add_argument("--config", default=str(ROOT / "config" / "portfolios.toml"))
     ap.add_argument("--state", default=str(ROOT / "state"))
     ap.add_argument("--every", type=int, default=60, help="секунд между шагами сессии")
@@ -397,6 +498,10 @@ def main(argv: list[str] | None = None) -> int:
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     state = Path(a.state)
     state.mkdir(parents=True, exist_ok=True)
+    if a.cmd == "update-crypto":
+        for sym in C.SYMBOLS:
+            C.update_history(sym)
+        return 0
     if a.cmd == "update-intraday":
         for secid in livedata.INTRADAY:
             log.info("%s: всего свечей %d", secid, livedata.update_candles(secid))

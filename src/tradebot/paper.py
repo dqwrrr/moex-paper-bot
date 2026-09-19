@@ -47,7 +47,7 @@ class Portfolio:
     strategy: str
     start_capital: float
     cash_rub: float                       # свободные рубли (не в фондах/акциях)
-    positions: dict[str, int] = field(default_factory=dict)   # тикер -> штук
+    positions: dict[str, float] = field(default_factory=dict) # тикер -> штук (у крипты — дробные)
     target: dict[str, float] = field(default_factory=dict)    # последние целевые веса
     pending: dict[str, float] | None = None                   # веса, ждущие исполнения
     last_signal_date: str | None = None
@@ -64,6 +64,7 @@ class Portfolio:
     day_trades: int = 0
     day_stopped: bool = False             # сработал дневной лимит убытка
     last_comment: str | None = None
+    currency: str = "RUB"                 # RUB для Мосбиржи, USDT для крипты
 
     # ---------- состояние ----------
     @classmethod
@@ -173,3 +174,25 @@ class Portfolio:
         amount = round(min(amount, self.cash_rub), 2)
         self.cash_rub = round(self.cash_rub - amount, 2)
         return amount
+
+
+def crypto_switch(p: Portfolio, symbol: str, want_in: bool, price: float, fee: float, now: str,
+                  reason: str) -> Trade | None:
+    """Крипта: всё в монету или всё в USDT (дробные количества, комиссия с суммы сделки)."""
+    held = p.positions.get(symbol, 0.0)
+    if want_in and not held and p.cash_rub > 0.01:
+        qty = round(p.cash_rub / (price * (1 + fee)), 8)
+        cost = round(qty * price * fee, 6)
+        p.cash_rub = round(p.cash_rub - qty * price - cost, 8)
+        p.positions[symbol] = qty
+        tr = Trade(now, symbol, "BUY", qty, price, cost, reason)
+    elif not want_in and held:
+        gross = held * price
+        cost = round(gross * fee, 6)
+        p.cash_rub = round(p.cash_rub + gross - cost, 8)
+        del p.positions[symbol]
+        tr = Trade(now, symbol, "SELL", held, price, cost, reason)
+    else:
+        return None
+    p.trades.append(asdict(tr))
+    return tr

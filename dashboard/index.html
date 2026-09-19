@@ -23,9 +23,9 @@ th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}th{col
 </style>
 </head>
 <body><div class="wrap">
-<h1>Бумажный торговый бот · Мосбиржа</h1>
+<h1>Бумажный торговый бот</h1>
 <div class="sub" id="meta">загрузка…</div>
-<div class="warn">Деньги виртуальные, котировки реальные (MOEX ISS, задержка ~15 мин). Прошлая доходность не гарантирует будущую. Не является инвестиционной рекомендацией.</div>
+<div class="warn">Деньги виртуальные, котировки реальные (Мосбиржа — с задержкой ~15 мин, крипта — Binance). Прошлая доходность не гарантирует будущую. Не является инвестиционной рекомендацией.</div>
 <div class="tabs" id="tabs" role="tablist"></div>
 <div id="root"></div>
 </div>
@@ -59,8 +59,9 @@ function render(){
     b.setAttribute('aria-selected',p.id===SEL); b.innerHTML=`${esc(p.title.split(':')[0])}<small class="${cls(p.pnl_pct)}">${pct(p.pnl_pct)}</small>`;
     b.onclick=()=>{SEL=p.id; try{localStorage.setItem('sel',SEL)}catch(e){} render(); refreshLive()}; tabs.appendChild(b)});
   const p=DATA.portfolios.find(x=>x.id===SEL); if(!p) return;
+  const CUR=p.currency==='USDT'?'$':'₽', BN=p.bench_name||'TMOS';
   const el=document.createElement('div'); el.className='card';
-  const pos=p.positions.map(x=>`<tr><td>${esc(x.ticker)}</td><td>${esc(x.name)}</td><td>${x.qty}</td><td data-px="${esc(x.ticker)}">${fmt(x.price,4)}</td><td>${fmt(x.value)}</td><td>${fmt(x.weight*100,1)}%</td></tr>`).join('')||'<tr><td colspan=6>Сейчас вне рынка — деньги в рублях</td></tr>';
+  const pos=p.positions.map(x=>`<tr><td>${esc(x.ticker)}</td><td>${esc(x.name)}</td><td>${x.qty}</td><td data-px="${esc(x.ticker)}">${fmt(x.price,4)}</td><td>${fmt(x.value)}</td><td>${fmt(x.weight*100,1)}%</td></tr>`).join('')||`<tr><td colspan=6>Сейчас вне рынка — деньги в ${p.currency==='USDT'?'USDT':'рублях'}</td></tr>`;
   const tr=p.trades.slice(0,20).map(t=>`<tr><td>${esc(t.time)}</td><td>${t.side==='BUY'?'Покупка':'Продажа'}</td><td>${esc(t.ticker)}</td><td>${t.qty}</td><td>${fmt(t.price,4)}</td><td>${fmt(t.cost)}</td><td>${esc(t.reason)}</td></tr>`).join('')||'<tr><td colspan=7>Сделок ещё не было</td></tr>';
   const ev=p.events.slice(0,80).map(e=>`<div class="ev ${esc(e.kind)}"><time>${esc(e.t.slice(5))}</time>${esc(e.text)}</div>`).join('')||'<div class="ev">Событий пока нет</div>';
   const recEv=p.events.find(e=>e.kind==='withdraw'||e.kind==='summary'||e.kind==='risk');
@@ -68,23 +69,23 @@ function render(){
   el.innerHTML=`<h2>${esc(p.title)}</h2><div class="note">${esc(p.strategy)} · ${esc(p.note)}</div>
   ${recEv?`<div class="rec"><b>Последняя рекомендация (${esc(recEv.t.slice(5))}):</b> ${esc(recEv.text)}</div>`:''}
   <div class="kpis">
-    <div class="kpi"><span>Капитал на счёте</span><b id="eq-${p.id}">${fmt(p.equity)} ₽</b></div>
+    <div class="kpi"><span>Капитал на счёте</span><b id="eq-${p.id}">${fmt(p.equity)} ${CUR}</b></div>
     ${p.day_pnl_pct!=null?`<div class="kpi"><span>За сегодня</span><b class="${cls(p.day_pnl_pct)}">${pct(p.day_pnl_pct)}</b></div>`:''}
     <div class="kpi"><span>С начала (с учётом выведенного)</span><b id="pnl-${p.id}" class="${cls(p.pnl_pct)}">${pct(p.pnl_pct)}</b></div>
-    <div class="kpi"><span>Выведено прибыли</span><b>${fmt(p.withdrawn)} ₽</b></div>
-    ${p.kind==='intraday'?`<div class="kpi"><span>Тело / сделок сегодня</span><b>${fmt(p.body,0)} ₽ · ${p.day_trades}</b></div>`:''}
-    <div class="kpi"><span>Просто держать TMOS</span><b class="${cls(last.bench/p.start_capital-1)}">${pct(last.bench/p.start_capital-1)}</b></div>
+    <div class="kpi"><span>Выведено прибыли</span><b>${fmt(p.withdrawn)} ${CUR}</b></div>
+    ${p.kind!=='daily'?`<div class="kpi"><span>Тело / сделок сегодня</span><b>${fmt(p.body,0)} ${CUR} · ${p.day_trades}</b></div>`:''}
+    <div class="kpi"><span>Просто держать ${esc(BN)}</span><b class="${cls(last.bench/p.start_capital-1)}">${pct(last.bench/p.start_capital-1)}</b></div>
   </div>
   ${p.pending?`<div class="note">Ожидает исполнения при открытии рынка: ${esc(JSON.stringify(p.pending))}</div>`:''}
   <h3>Лента бота</h3><div class="feed">${ev}</div>
-  <h3>Капитал во времени</h3><div class="legend"><span><i style="border-color:var(--acc)"></i>Бот (капитал + выведенное)</span><span><i style="border-color:var(--bench);border-top-style:dashed"></i>Просто держать TMOS</span></div><div class="chart" id="c-${p.id}"></div>
-  <h3>Позиции</h3><div class="scroll"><table><tr><th>Тикер</th><th>Бумага</th><th>Штук</th><th>Цена</th><th>Стоимость, ₽</th><th>Доля</th></tr>${pos}</table></div>
-  <h3>Сделки</h3><div class="scroll"><table><tr><th>Время</th><th>Тип</th><th>Тикер</th><th>Штук</th><th>Цена</th><th>Издержки, ₽</th><th>Причина</th></tr>${tr}</table></div>`;
+  <h3>Капитал во времени</h3><div class="legend"><span><i style="border-color:var(--acc)"></i>Бот (капитал + выведенное)</span><span><i style="border-color:var(--bench);border-top-style:dashed"></i>Просто держать ${esc(BN)}</span></div><div class="chart" id="c-${p.id}"></div>
+  <h3>Позиции</h3><div class="scroll"><table><tr><th>Тикер</th><th>Бумага</th><th>Штук</th><th>Цена</th><th>Стоимость, ${CUR}</th><th>Доля</th></tr>${pos}</table></div>
+  <h3>Сделки</h3><div class="scroll"><table><tr><th>Время</th><th>Тип</th><th>Тикер</th><th>Штук</th><th>Цена</th><th>Издержки, ${CUR}</th><th>Причина</th></tr>${tr}</table></div>`;
   root.appendChild(el);
-  drawChart(document.getElementById('c-'+p.id), p.history);
+  drawChart(document.getElementById('c-'+p.id), p.history, CUR, BN);
 }
 
-function drawChart(box, h){
+function drawChart(box, h, CUR='₽', BN='TMOS'){
   if(!h.length){box.textContent='Нет данных';return}
   const W=box.clientWidth||600, H=box.clientHeight||260, L=56, R=10, T=10, B=24;
   const a=h.map(x=>x.equity+x.withdrawn), b=h.map(x=>x.bench);
@@ -93,7 +94,7 @@ function drawChart(box, h){
   const X=i=>L+(h.length<2?(W-L-R)/2:i*(W-L-R)/(h.length-1)), Y=v=>T+(hi-v)*(H-T-B)/(hi-lo);
   const path=arr=>arr.map((v,i)=>(i?'L':'M')+X(i).toFixed(1)+','+Y(v).toFixed(1)).join('');
   const ticks=[0,.5,1].map(k=>lo+(hi-lo)*k);
-  let g=ticks.map(v=>`<line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)"/><text x="${L-6}" y="${Y(v)+4}" text-anchor="end" font-size="11" fill="var(--mute)">${fmt(v,0)}</text>`).join('');
+  let g=ticks.map(v=>`<line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)"/><text x="${L-6}" y="${Y(v)+4}" text-anchor="end" font-size="11" fill="var(--mute)">${fmt(v,v<100?2:0)}</text>`).join('');
   g+=`<text x="${L}" y="${H-6}" font-size="11" fill="var(--mute)">${esc(h[0].t.slice(0,10))}</text><text x="${W-R}" y="${H-6}" text-anchor="end" font-size="11" fill="var(--mute)">${esc(h[h.length-1].t.slice(0,10))}</text>`;
   const dots=h.length<2?`<circle cx="${X(0)}" cy="${Y(a[0])}" r="4" fill="var(--acc)"/>`:'';
   box.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="График капитала">${g}<path d="${path(b)}" fill="none" stroke="var(--bench)" stroke-width="1.5" stroke-dasharray="5 4"/><path d="${path(a)}" fill="none" stroke="var(--acc)" stroke-width="2"/>${dots}<line class="xh" y1="${T}" y2="${H-B}" stroke="var(--mute)" stroke-width="1" style="display:none"/></svg><div class="tip"></div>`;
@@ -101,13 +102,13 @@ function drawChart(box, h){
   svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect(); const x=(e.clientX-r.left)*W/r.width;
     const i=Math.max(0,Math.min(h.length-1,Math.round((x-L)/((W-L-R)/Math.max(1,h.length-1)))));
     xh.setAttribute('x1',X(i));xh.setAttribute('x2',X(i));xh.style.display='';
-    tip.innerHTML=`${esc(h[i].t)} МСК<br>Бот: <b>${fmt(a[i])} ₽</b><br>Держать TMOS: ${fmt(b[i])} ₽`;
+    tip.innerHTML=`${esc(h[i].t)} МСК<br>Бот: <b>${fmt(a[i])} ${CUR}</b><br>Держать ${esc(BN)}: ${fmt(b[i])} ${CUR}`;
     tip.style.display='block'; tip.style.left=Math.min(r.width-170,(X(i)*r.width/W)+10)+'px'; tip.style.top='8px'});
   svg.addEventListener('mouseleave',()=>{tip.style.display='none';xh.style.display='none'});
 }
 
 async function refreshLive(){
-  const p=DATA&&DATA.portfolios.find(x=>x.id===SEL); if(!p||!p.positions.length) return;
+  const p=DATA&&DATA.portfolios.find(x=>x.id===SEL); if(!p||!p.positions.length||p.kind==='crypto') return;
   const px=await livePrices(p.positions.map(x=>x.ticker)); const tag=document.getElementById('liveTag');
   if(!px||!Object.keys(px).length){if(tag) tag.textContent='живые котировки недоступны — показан снимок';return}
   if(tag){tag.textContent='цены с биржи: '+new Date().toLocaleTimeString('ru-RU'); tag.className='pill live'}

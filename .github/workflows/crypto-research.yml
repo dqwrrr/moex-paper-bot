@@ -1,0 +1,33 @@
+name: Крипто-исследование
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: crypto-research
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -e .
+      - name: Скачать часовые свечи BTC, ETH, TON (с 2020 года)
+        run: python -m tradebot.runner update-crypto
+      - name: Проверить стратегии
+        run: python research/crypto_report.py
+      - name: Опубликовать данные и отчёт в ветку data-crypto
+        run: |
+          mkdir -p /tmp/pub && cp data/crypto_*.parquet docs/crypto-research.md research/out/crypto_results.csv /tmp/pub/
+          git worktree add --detach pub
+          cd pub
+          git checkout -q --orphan data-crypto-new
+          git rm -rfq .
+          cp /tmp/pub/* .
+          git config user.name "paper-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "crypto data $(date -u +%F)"
+          git push -q --force origin HEAD:refs/heads/data-crypto
