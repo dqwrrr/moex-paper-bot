@@ -53,6 +53,7 @@ function render(){
   const root=document.getElementById('root'); root.innerHTML='';
   const ago=Math.round((Date.now()-new Date(DATA.updated.replace(' ','T')+':00+03:00'))/60000);
   document.getElementById('meta').innerHTML=`Обновлено ботом: ${esc(DATA.updated)} МСК (${ago<1?'только что':ago+' мин назад'}) · <span id="liveTag" class="pill">котировки из снимка</span>`;
+  if(DATA.errors&&DATA.errors.length){const w=document.createElement('div');w.className='warn';w.textContent='Сбой в последнем шаге бота: '+DATA.errors.map(e=>e.portfolio+' — '+e.error).join('; ');root.appendChild(w)}
   const tabs=document.getElementById('tabs'); tabs.innerHTML='';
   if(!DATA.portfolios.some(p=>p.id===SEL)) SEL=DATA.portfolios[0]?.id;
   DATA.portfolios.forEach(p=>{const b=document.createElement('button'); b.className='tab'; b.role='tab';

@@ -291,38 +291,52 @@ def step(cfg: dict, state_dir: Path, now: datetime | None = None, update_data: b
         livedata.update_index()
         ctx.index_at = now
     last_day = pd.read_parquet(DATA_DIR / "index_daily.parquet")["MCFTR"].dropna().index.max()
-    blocks = []
+    blocks, errors = [], []
     for pc in cfg["portfolio"]:
-        path = state_dir / f"{pc['id']}.json"
-        kind = pc.get("kind", "daily")
-        fac = {"intraday": INTRADAY_FACTORIES, "crypto": C.FACTORIES}.get(kind, FACTORIES)
-        name = fac[pc["strategy"]](pc.get("params", {})).name
-        p = Portfolio.load(path) if path.exists() else new_portfolio(pc, name, rules, now)
-        if kind == "crypto":
-            try:
-                prices = step_crypto(p, pc, now, stamp, ctx)
-            except C.CryptoDataError as e:
-                log.warning("%s: %s", p.id, e)
-                last_px = p.history[-1]["tmos"] if p.history else 0.0
-                blocks.append(site_block(p, {pc["symbol"]: last_px}, pc))
-                p.save(path)
-                continue
-            record_history(p, prices, True, now, pc["symbol"])
-            p.save(path)
-            blocks.append(site_block(p, prices, pc))
-            continue
         try:
-            if kind == "intraday":
-                step_intraday(p, pc, now, stamp, ctx)
-            else:
-                step_daily(p, pc, rules, last_day, stamp, ctx, update_data)
-        except iss.IssError as e:
+            blocks.append(step_portfolio(pc, cfg, state_dir, rules, last_day, now, stamp, ctx, update_data))
+        except Exception as e:  # noqa: BLE001 — сбой одного портфеля не должен останавливать остальные
+            log.exception("Портфель %s: ошибка", pc["id"])
+            errors.append({"portfolio": pc["id"], "error": f"{type(e).__name__}: {e}"[:500]})
+    write_status(state_dir, stamp, errors)
+    return write_site(state_dir, blocks, cfg, stamp, last_day, errors)
+
+
+def step_portfolio(pc: dict, cfg: dict, state_dir: Path, rules: RiskRules, last_day, now: datetime, stamp: str,
+                   ctx: Ctx, update_data: bool) -> dict:
+    path = state_dir / f"{pc['id']}.json"
+    kind = pc.get("kind", "daily")
+    fac = {"intraday": INTRADAY_FACTORIES, "crypto": C.FACTORIES}.get(kind, FACTORIES)
+    name = fac[pc["strategy"]](pc.get("params", {})).name
+    p = Portfolio.load(path) if path.exists() else new_portfolio(pc, name, rules, now)
+    if kind == "crypto":
+        try:
+            prices = step_crypto(p, pc, now, stamp, ctx)
+        except C.CryptoDataError as e:
             log.warning("%s: %s", p.id, e)
-        prices, _, live = fetch_prices({v["ticker"] for v in INSTRUMENTS.values()} | set(p.positions))
-        record_history(p, prices, live, now)
+            last_px = p.history[-1]["tmos"] if p.history else 0.0
+            p.save(path)
+            return site_block(p, {pc["symbol"]: last_px}, pc)
+        record_history(p, prices, True, now, pc["symbol"])
         p.save(path)
-        blocks.append(site_block(p, prices, pc))
-    return write_site(state_dir, blocks, cfg, stamp, last_day)
+        return site_block(p, prices, pc)
+    try:
+        if kind == "intraday":
+            step_intraday(p, pc, now, stamp, ctx)
+        else:
+            step_daily(p, pc, rules, last_day, stamp, ctx, update_data)
+    except iss.IssError as e:
+        log.warning("%s: %s", p.id, e)
+    prices, _, live = fetch_prices({v["ticker"] for v in INSTRUMENTS.values()} | set(p.positions))
+    record_history(p, prices, live, now)
+    p.save(path)
+    return site_block(p, prices, pc)
+
+
+def write_status(state_dir: Path, stamp: str, errors: list[dict]) -> None:
+    """status.json в ветке live — чтобы диагностировать бота без доступа к логам Actions."""
+    (state_dir / "status.json").write_text(json.dumps({"updated": stamp, "ok": not errors, "errors": errors},
+                                                       ensure_ascii=False, indent=1), encoding="utf-8")
 
 
 def record_history(p: Portfolio, prices: dict[str, float], live: bool, now: datetime,
@@ -340,8 +354,10 @@ def record_history(p: Portfolio, prices: dict[str, float], live: bool, now: date
     p.history = compact(p.history)
 
 
-def write_site(state_dir: Path, blocks: list[dict], cfg: dict, stamp: str, last_day) -> dict:
+def write_site(state_dir: Path, blocks: list[dict], cfg: dict, stamp: str, last_day,
+               errors: list[dict] | None = None) -> dict:
     site = {"updated": stamp, "last_data_day": str(pd.Timestamp(last_day).date()), "portfolios": blocks,
+            "errors": errors or [],
             "risk": cfg["risk"], "disclaimer": "Виртуальные деньги. Не является инвестиционной рекомендацией."}
     (state_dir / "site.json").write_text(json.dumps(site, ensure_ascii=False), encoding="utf-8")
     return site
@@ -461,9 +477,11 @@ def session(cfg: dict, state_dir: Path, every: int, publish_every: int, publish_
         try:
             step(cfg, state_dir, now, True, ctx)
             errors = 0
-        except Exception:  # noqa: BLE001 — сессия не должна падать из-за одного сбоя сети
+        except Exception as e:  # noqa: BLE001 — сессия не должна падать из-за одного сбоя сети
             errors += 1
             log.exception("Ошибка шага (%d подряд)", errors)
+            write_status(state_dir, now.strftime("%Y-%m-%d %H:%M"),
+                         [{"portfolio": "*", "error": f"{type(e).__name__}: {e}"[:500]}])
             if errors >= 10:
                 raise
         due = [s for s in slots if s not in done and now.strftime("%H:%M") >= s]

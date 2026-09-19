@@ -124,3 +124,15 @@ def test_intraday_step_trades_comments_and_body_withdrawal(tmp_path, monkeypatch
     st = json.loads((tmp_path / "a.json").read_text())
     eq_after = st["cash_rub"] + sum(q * prices[t] for t, q in st["positions"].items())
     assert 995 <= eq_after <= 1000.01 and st["withdrawals"][0]["amount"] > 90
+
+
+def test_one_broken_portfolio_does_not_stop_others(tmp_path, monkeypatch):
+    monkeypatch.setattr(iss, "quotes", quotes_stub({"TMOS": 6.5, "TMON": 140.0}))
+    cfg = {"risk": {"dd_limit": 0.2, "cooldown_days": 21, "withdraw_trigger": 0.15, "withdraw_share": 0.5,
+                    "withdraw_freq": "QE"},
+           "portfolio": [{"id": "bad", "title": "b", "strategy": "no_such_strategy", "capital": 1000},
+                         {"id": "ok", "title": "t", "strategy": "index_sma", "params": {"n": 150}, "capital": 1000}]}
+    site = runner.tick(cfg, tmp_path, update_data=False)
+    assert [p["id"] for p in site["portfolios"]] == ["ok"]
+    st = json.loads((tmp_path / "status.json").read_text())
+    assert not st["ok"] and st["errors"][0]["portfolio"] == "bad"
